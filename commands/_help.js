@@ -53,36 +53,36 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
+                let str = `🍁 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 🍁\n`
                 str +=
-                    '```' + `│ ╭──────────────◆
-│ │ User:- ${citel.pushName}
-│ │ Theme:- ${tlang().title}
-│ │ Prefix:- [ ${prefix} ]
-│ │ Owner:- ${Config.ownername}
-│ │ Plugins:- ${commands.length}
-│ │ Users:- ${total}
-│ │ Uptime:- ${runtime(process.uptime())}
-│ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-│ │ Time:- ${time}
-│ │ Date:- ${date}
-│ ╰──────────────◆
-╰───────────────⊷\n
-` + '```'
+                    '' + `𝗛𝗜 ${citel.pushName}
+╔══════❍
+║𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴
+╠══════════❍
+║ 𝐔𝐒𝐄𝐑:- ${citel.pushName}
+║ 𝐓𝐇𝐄𝐌𝐄𝐒:- ${tlang().title}
+║ 𝐏𝐑𝐄𝐅𝐈𝐗:-  ${prefix} 
+║ 𝐎𝐖𝐍𝐄𝐑:- ᴍʀ•ɴᴏᴛɪʏᴀ
+╚══════════❍
+╔═══════════════❍
+║𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐋𝐈𝐒𝐓
+╚═══════════════❍\n
+` + ''
                 for (const category in cmds) 
                 {
-                   str += `╭────❏ *${tiny(category)}* ❏\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `╭─────❏ *${tiny(category)}* ❏\n` ;      
-                        for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
-                        str += `╰━━━━━━━━━━━━━──⊷\n`  ;
+                   str += `╔═❮ *${tiny(category)}*❯══❍\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `╔═❮ *${tiny(category)}*\n❯══❍` ;      
+                        for (const plugins of cmds[category]) { str += `║🍁⃞➢ ${fancytext(plugins,1)}\n` ; }
+                        str += `╚════════════❍\n`  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
-                         str += `╰━━━━━━━━━━━━━━──⊷\n`  ; 
+                   else { for (const plugins of cmds[category]) { str += `║ 💕⃞➢ ${fancytext(plugins,1)}\n` ; }
+                         str += `╚══════════❍\n`  ; 
                    }
   
                 }
-                str+= `*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*Made with ❤️ in Nodejs* `
+                str+= `*ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ 
+ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ*`
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
@@ -93,8 +93,8 @@ Secktor.cmd({
     )
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "list",
-            desc: "list menu",
+            pattern: "cmd",
+            desc: "cmd1",
             category: "general"
         },
         async(Void, citel) => {
@@ -128,7 +128,7 @@ Secktor.cmd({
         pattern: "owner",
         desc: "To find owner number",
         category: "general",
-        react: "💜",
+        react: "🍁",
         filename: __filename
     },
     async(Void, citel) => {
