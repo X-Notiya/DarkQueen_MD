@@ -24,7 +24,7 @@ Secktor.cmd({
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "✨",
+            react: "🧚‍♂️",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -53,36 +53,35 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
+                let str = `❋` + fancytext(Config.ownername.split(' ')[0], 58) + `❋\n`
                 str +=
-                    '```' + `│ ╭──────────────◆
-│ │ User:- ${citel.pushName}
-│ │ Theme:- ${tlang().title}
-│ │ Prefix:- [ ${prefix} ]
-│ │ Owner:- ${Config.ownername}
-│ │ Plugins:- ${commands.length}
-│ │ Users:- ${total}
-│ │ Uptime:- ${runtime(process.uptime())}
-│ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-│ │ Time:- ${time}
-│ │ Date:- ${date}
-│ ╰──────────────◆
-╰───────────────⊷\n
+                    '```' + `╔════════❍
+║💓𝐔𝐒𝐄𝐑💓- ${citel.pushName}
+║💓𝐓𝐇𝐄𝐌𝐄𝐒💓${tlang().title}
+║💓𝐏𝐑𝐈𝐅𝐈𝐗💓 ${prefix} 
+║💓𝐎𝐖𝐍𝐄𝐑💓 ${Config.ownername}
+║💓𝐏𝐋𝐔𝐆𝐈𝐍𝐒💓:- ${commands.length}
+║💓𝐔𝐏𝐓𝐈𝐌𝐄💓 ${runtime(process.uptime())}
+║💓𝐌𝐄𝐌𝐎𝐑𝐘💓:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+║💓𝐓𝐈𝐌𝐄💓 ${time}
+║💓𝐃𝐀𝐓𝐄💓 ${date}
+╚═════════❍\n
 ` + '```'
                 for (const category in cmds) 
                 {
-                   str += `╭────❏ *${tiny(category)}* ❏\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `╭─────❏ *${tiny(category)}* ❏\n` ;      
-                        for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
-                        str += `╰━━━━━━━━━━━━━──⊷\n`  ;
+                   str += `╔══❋ ${tiny(category)} ❋══❍\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `╔══❋ ${tiny(category)} ❋══❍\n` ;      
+                        for (const plugins of cmds[category]) { str += `║ 💕⃢➢ ${fancytext(plugins,1)}\n` ; }
+                        str += `╚══════❍\n`  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
-                         str += `╰━━━━━━━━━━━━━━──⊷\n`  ; 
+                   else { for (const plugins of cmds[category]) { str += `║💕⃢➢ ${fancytext(plugins,1)}\n` ; }
+                         str += `╚══════❍\n`  ; 
                    }
   
                 }
-                str+= `*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*Made with ❤️ in Nodejs* `
+                str+= `ᴅᴀᴇᴋQᴜᴇᴇɴ-ᴍᴅ
+ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ•ɴᴏᴛɪʏᴀ `
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
@@ -100,25 +99,18 @@ Secktor.cmd({
         async(Void, citel) => {
             const { commands } = require('../lib');
             let str = `
-╭━━〘 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 〙━━──⊷`
+ ` + fancytext(Config.ownername.split(' ')[0], 58) + ` `
             str += `
-┃ ⛥╭──────────────      
-┃ ⛥│ User: ${citel.pushName}
-┃ ⛥│ Theme: ${tlang().title}
-┃ ⛥│ Prefix: ${prefix}
-┃ ⛥│ Owner: ${Config.ownername}
-┃ ⛥│ Commands: ${commands.length}
-┃ ⛥│ Uptime: ${runtime(process.uptime())}
-┃ ⛥│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃ ⛥│  
-┃ ⛥╰───────────
-╰━━━━━━━━━━━──⊷\n`
+╔═══════❍
+║💓𝐇𝐄𝐘💓  ${citel.pushName}
+║💓𝐎𝐖𝐍𝐄𝐑💓 ᴍʀ•ɴᴏᴛɪʏᴀ
+╚═══════❍\n`
 for (let i = 0; i < commands.length; i++) 
 {
      if(commands[i].pattern==undefined) continue
-     str +=       `╭ ${i+1} *${fancytext(commands[i].pattern,1)}*\n` 
+     str +=       `╔💓 ${i+1} *${fancytext(commands[i].pattern,1)}*\n` 
      if(commands[i].desc=undefined) commands[i].desc=""
-     str += `╰➛ ${fancytext(commands[i].desc,1)}\n`
+     str += `╚💓${fancytext(commands[i].desc,1)}\n`
 }
             return await Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: str })
         }
@@ -180,3 +172,4 @@ async(Void, citel, text) => {
 
 
 })
+
