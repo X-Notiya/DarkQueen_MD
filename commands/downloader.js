@@ -129,7 +129,16 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: ` ⿻ Title : ${titleYt}\n ⿻ File Size : ${fileSizeInMegabytes} MB`,
+                        caption: `┏━━━━━━━━━━●
+┃ᴅᴀʀᴋQᴜᴇᴇɴ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴅᴇʀ           
+┃🎩𝐝𝐨𝐰𝐧𝐥𝐨𝐝𝐢𝐧𝐠 𝐲𝐨𝐮𝐫 𝐯𝐢𝐝𝐞𝐨📥
+┃🧚‍♂️𝐭𝐢𝐭𝐥𝐞 : ${titleYt}\n
+┃🍁𝐟𝐢𝐥𝐞 𝐬𝐢𝐳𝐞 : ${fileSizeInMegabytes} 
+┃🎭𝐯𝐢𝐞𝐰𝐬 : ${i.views}\n
+┃💓𝐥𝐚𝐬𝐭 𝐮𝐩𝐥𝐨𝐚𝐝 : ${i.ago}\n
+┃👾ᴅᴀʀᴋQᴜᴇᴇɴ👾
+┃🎭ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄʜᴀᴍᴏᴅʜ🎭
+┗━━━━━━━━━━●`,
                         headerType: 4,
                         contextInfo: {
                             externalAdReply: {
@@ -172,7 +181,7 @@ cmd({
                 },
                 caption: `
 ╭───────────────◆
-│⿻ ${tlang().title} 
+╎
 │  *Youtube Player* ✨
 │⿻ *Title:* ${anu.title}
 │⿻ *Duration:* ${anu.timestamp}
@@ -301,7 +310,14 @@ cmd({
             if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
-            citel.reply('*Downloadig:* '+titleYt)
+            citel.reply('┏━━━━━━━━━━●➤
+┃ ᴅᴀʀᴋQᴜᴇᴇɴ ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴅᴇʀ           
+┃🎩𝐝𝐨𝐰𝐧𝐥𝐨𝐝𝐢𝐧𝐠 𝐲𝐨𝐮𝐫 𝐬𝐨𝐧𝐠📥
+┃🥀𝐯𝐢𝐞𝐰𝐬 : ${i.views}\n
+┃🧜‍♀️𝐮𝐩𝐥𝐨𝐚𝐝 𝐚𝐭 : ${i.ago}\n
+┃👾ᴅᴀʀᴋQᴜᴇᴇɴ👾
+┃🎭ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄʜᴀᴍᴏᴅʜ🎭
+┗━━━━━━━━━━●➤')
             const stream = ytdl(anu.url, {
                     filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
                 })
