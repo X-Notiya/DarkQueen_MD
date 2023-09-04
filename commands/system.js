@@ -245,13 +245,25 @@ cmd({
         async(Void, citel, text, isAdmins) => {
             let alivemessage = Config.ALIVE_MESSAGE || ``
             const alivtxt = `
-╔════════❍            
-║💓ʜᴇʟʟᴏᴡ💓${citel.pushName},
-║💓ᴜᴘᴛɪᴍᴇ💓${runtime(process.uptime())}
-║💓ᴏᴡɴᴇʀ💓 ᴄʜᴀᴍᴏᴅʜ
-║💓ʙʀᴀɴᴄʜ💓 ${Config.BRANCH}
-║💓ᴘᴏᴡᴇʀᴇᴅ ʙʏ💓 ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ
-╚════════❍
+          
+👋Hello ${citel.pushName}, I'm Alive Now🧜‍♀️
+
+🐲Iam Dark Queen MD bot💓
+
+💓ᴜᴘᴛɪᴍᴇ💓${runtime(process.uptime())}
+💓ᴏᴡɴᴇʀ💓 ᴄʜᴀᴍᴏᴅʜ
+💓ʙʀᴀɴᴄʜ💓 ${Config.BRANCH}
+💓ᴘʟᴀᴛꜰᴏʀᴍ💓 Heroku
+💓ᴍᴏᴅᴇ💓ᴘᴜʙʟɪᴄ
+💓ᴠᴇʀꜱɪᴏɴ💓 1.0
+
+ 💕𝐇𝐚𝐯𝐞 𝐀 𝐍𝐢𝐜𝐞 𝐃𝐚𝐲 💕
+
+
+
+
+🎭ᴅᴀʀᴋ Qᴜᴇᴇɴ🎭
+👾ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄʜᴀᴍᴏᴅʜ👾
 `;
             let aliveMessage = {
                 image: {
