@@ -136,8 +136,7 @@ Secktor.cmd({
             contextInfo: {
                 externalAdReply: {
                     title: '${latensie.toFixed(4)} ',
-                    body: '🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
-🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩',
+                    body: Comfig.ownername,
                     renderLargerThumbnail: true,
                     thumbnailUrl: ``,
                     thumbnail: log0,
