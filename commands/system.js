@@ -105,6 +105,7 @@ cmd({
         pattern: "url",
         alias : ['createurl'],
         category: "misc",
+        react: "💱",
         filename: __filename,
         desc: "image to url."
     },
@@ -124,6 +125,7 @@ cmd({
     pattern: "trt",
     alias :['translate'],
     category: "misc",
+    react: "🍁",
     filename: __filename,
     desc: "Translate\'s given text in desird language."
 },
@@ -141,6 +143,7 @@ async(Void, citel, text) => {
 cmd({
             pattern: "shell",
             category: "owner",
+            react: "🧣",
             filename: __filename,
             desc: "Runs command in Heroku(server) shell."
         },
@@ -208,6 +211,7 @@ cmd({
 cmd({
             pattern: "ban",
             category: "owner",
+            react: "🧜‍♀️",
             filename: __filename,
             desc: "Bans user from using bot."
         },
@@ -239,31 +243,25 @@ cmd({
 cmd({
             pattern: "alive",
             category: "general",
+            react: "😈"
             filename: __filename,
             desc: "is bot alive??"
         },
         async(Void, citel, text, isAdmins) => {
-            let alivemessage = Config.ALIVE_MESSAGE || ``
+            let alivemessage = Config.ALIVE_MG || ``
             const alivtxt = `
           
-👋Hello ${citel.pushName}, I'm Alive Now🧜‍♀️
+```👋Hello ${citel.pushName}, I'm Alive Now🧜‍♀️```
 
 🐲Iam Dark Queen MD bot💓
-
-💓ᴜᴘᴛɪᴍᴇ💓${runtime(process.uptime())}
-💓ᴏᴡɴᴇʀ💓 ᴄʜᴀᴍᴏᴅʜ
-💓ʙʀᴀɴᴄʜ💓 ${Config.BRANCH}
-💓ᴘʟᴀᴛꜰᴏʀᴍ💓 Heroku
-💓ᴍᴏᴅᴇ💓ᴘᴜʙʟɪᴄ
-💓ᴠᴇʀꜱɪᴏɴ💓 1.0
+🥀𝙐𝙋𝙏𝙄𝙈𝙀 ${runtime(process.uptime())
+🎩𝘽𝙍𝘼𝙉𝘾𝙃 ${Config.BRANCH}
+🐲𝙊𝙒𝙉𝙀𝙍 𝐜𝐡𝐚𝐦𝐨𝐝𝐡
+🦂𝙎𝙋𝙀𝙀𝘿 ${latensie.toFixed(4)} 
 
  💕𝐇𝐚𝐯𝐞 𝐀 𝐍𝐢𝐜𝐞 𝐃𝐚𝐲 💕
-
-
-
-
-🎭ᴅᴀʀᴋ Qᴜᴇᴇɴ🎭
-👾ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄʜᴀᴍᴏᴅʜ👾
+🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
+🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
 `;
             let aliveMessage = {
                 image: {
@@ -283,6 +281,7 @@ cmd({
 cmd({
         pattern: "allnotes",
         category: "owner",
+        react: "💓",
         filename: __filename,
         desc: "Shows list of all notes."
     },
