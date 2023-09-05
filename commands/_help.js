@@ -50,7 +50,7 @@ Secktor.cmd({
                 let str = `❋` + fancytext(Config.ownername.split('DARK QUEEN ')[0], 23) + ` ❋\n`
                 str +=
                     '```' + `┏━━━━━●
-┃```Hellow ${citel.pushName}```
+┃ 👋Hellow ${citel.pushName}
 ┣━━━━━━━━━━●
 ┃ 🥀𝑇𝐻𝐸𝑀𝐸𝑆●➢...𝗗𝗔𝗥𝗞 𝗤𝗨𝗘𝗘𝗡
 ┃ 🧜‍♂️𝑂𝑊𝑁𝐸𝑅●➢ 𝐜𝐡𝐚𝐦𝐨𝐝𝐡
