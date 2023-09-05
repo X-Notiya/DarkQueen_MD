@@ -6,7 +6,7 @@
                "type": "commonjs",
                "license": "GPL-3.0",
    "scripts": {
-                "start": "pm2 start lib/client.js --deep-monitoring --attach --name secktor",
+                "start": "pm2 start lib/client.js --deep-monitoring --attach --name DarkQueen",
                 "stop": "pm2 stop 💓DarkQueen💓"
                 },
                "author": "SamPandey001",
