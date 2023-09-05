@@ -63,7 +63,7 @@ Secktor.cmd({
 ` + '```'
                  for (const category in cmds) 
                 {
-                   str += `+●━━🧜‍♀️${tiny(category)}🧜‍♀️━━●\n` ;
+                   str += `●━━🧜‍♀️${tiny(category)}🧜‍♀️━━●\n` ;
                    if(text.toLowerCase() == category.toLowerCase()){ str = `●━━🧚‍♂️${tiny(category)}🧚‍♂️━━●\n` ;      
                         for (const plugins of cmds[category]) { str += `●${fancytext(plugins,55)}\n` ; }
                         str += `●━━━━━━━━━━━━●\n`  ;
@@ -136,8 +136,9 @@ Secktor.cmd({
             contacts: { displayName: Config.ownername, contacts: [{ vcard }] },
             contextInfo: {
                 externalAdReply: {
-                    title: Config.ownername,
-                    body: 'Touch here.',
+                    title: '${latensie.toFixed(4)} ',
+                    body: '🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
+🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩',
                     renderLargerThumbnail: true,
                     thumbnailUrl: ``,
                     thumbnail: log0,
