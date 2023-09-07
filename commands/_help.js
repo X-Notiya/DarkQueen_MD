@@ -63,18 +63,19 @@ Secktor.cmd({
 ` + '```'
                  for (const category in cmds) 
                 {
-                   str += `●━━🧜‍♀️${tiny(category)}🧜‍♀️━━●\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `●━━🧚‍♂️${tiny(category)}🧚‍♂️━━●\n` ;      
-                        for (const plugins of cmds[category]) { str += `●${fancytext(plugins,23)}\n` ; }
-                        str += `●━━━━━━━━━━━━●\n`  ;
+                   str += `┏━━🧜‍♀️${tiny(category)}🧜‍♀️━━●\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `┏━━🧚‍♂️${tiny(category)}🧚‍♂️━━●\n` ;      
+                        for (const plugins of cmds[category]) { str += `┃🧚‍♂️⃞➪ ${fancytext(plugins,23)}\n` ; }
+                        str += `┗━━━━━━━━━━━━✦\n`  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `${fancytext(plugins,23)}\n` ; }
-                         str += `●━━━━━━━━━━━━●\n`  ; 
+                   else { for (const plugins of cmds[category]) { str += `🧚‍♂️⃞➪ ${fancytext(plugins,23)}\n` ; }
+                         str += `┗━━━━━━━━━━━━✦\n`  ; 
                    }
   
                 }
-                str+= `_ᴅᴀʀᴋ Qᴜᴇᴇɴ_`
+                str+= `🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
+🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭`
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
