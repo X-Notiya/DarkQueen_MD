@@ -61,7 +61,7 @@ cmd(
        )
      ) {
        delete this.game
-       return msgs.send(`💓```Successfully Deleted running TicTacToe game```💓`);
+       return msgs.send(`Successfully Deleted running TicTacToe game`);
        } else {  return msgs.send(`💱No TicTacToe game🎮 is running💱.`)}
 
 
