@@ -1,12 +1,6 @@
 /**
- Copyright (C) 2022.
- Licensed under the  GPL-3.0 License;
- You may not use this file except in compliance with the License.
- It is supplied in the hope that it may be useful.
- * @project_name : Secktor-Md
- * @author : SamPandey001 <https://github.com/SamPandey001>
- * @description : Secktor,A Multi-functional whatsapp bot.
- * @version 0.0.6
+🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
+🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
  **/
 
 const { addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime, prefix, Config ,sleep} = require('../lib')
@@ -48,7 +42,7 @@ cmd({
                 headerType: 4,
                 contextInfo: {
                     externalAdReply: {
-                        title: 'Secktor Session',
+                        title: 'DarkQueewn-MD',
                         body: 'Get you Session ID',
                         thumbnail: log0,
                         mediaType: 2,
@@ -105,7 +99,6 @@ cmd({
         pattern: "url",
         alias : ['createurl'],
         category: "misc",
-        react: "💱",
         filename: __filename,
         desc: "image to url."
     },
@@ -125,7 +118,6 @@ cmd({
     pattern: "trt",
     alias :['translate'],
     category: "misc",
-    react: "🍁",
     filename: __filename,
     desc: "Translate\'s given text in desird language."
 },
@@ -143,7 +135,6 @@ async(Void, citel, text) => {
 cmd({
             pattern: "shell",
             category: "owner",
-            react: "🧣",
             filename: __filename,
             desc: "Runs command in Heroku(server) shell."
         },
@@ -211,7 +202,6 @@ cmd({
 cmd({
             pattern: "ban",
             category: "owner",
-            react: "🧜‍♀️",
             filename: __filename,
             desc: "Bans user from using bot."
         },
@@ -243,25 +233,24 @@ cmd({
 cmd({
             pattern: "alive",
             category: "general",
-            react: "😈"
             filename: __filename,
             desc: "is bot alive??"
         },
         async(Void, citel, text, isAdmins) => {
-            let alivemessage = Config.ALIVE_MG || ``
+            let alivemessage = Config.ALIVE_MESSAGE || ``
             const alivtxt = `
-          
-```👋Hello ${citel.pushName}, I'm Alive Now🧜‍♀️```
-
-🐲Iam Dark Queen MD bot💓
-🥀𝙐𝙋𝙏𝙄𝙈𝙀 ${runtime(process.uptime())
-🎩𝘽𝙍𝘼𝙉𝘾𝙃 ${Config.BRANCH}
-🐲𝙊𝙒𝙉𝙀𝙍 𝐜𝐡𝐚𝐦𝐨𝐝𝐡
-🦂𝙎𝙋𝙀𝙀𝘿 ${latensie.toFixed(4)} 
-
- 💕𝐇𝐚𝐯𝐞 𝐀 𝐍𝐢𝐜𝐞 𝐃𝐚𝐲 💕
-🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
-🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
+┏━━✦
+┃ *_Hellow ${citel.pushName} I'm Alive Now_* 
+┗━━━━━━━━━●      
+┏━━━━━━━●
+┃❄️𝑺𝑷𝑬𝑬𝑫 ${latensie.toFixed(4)} 
+┃🥀𝑼𝑷𝑻𝑰𝑴𝑬${runtime(process.uptime())}
+┃🎭𝑶𝑾𝑵𝑬𝑹 ᴄʜᴀᴍᴏᴅʜ
+┃🧣𝑩𝑹𝑨𝑵𝑪𝑯 ${Config.BRANCH}
+┃🎩𝑶𝑾𝑵𝑬𝑹 𝑵𝑶 94711928777
+┃🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
+┃🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭
+┗━━━━━━━━━━✦
 `;
             let aliveMessage = {
                 image: {
@@ -281,7 +270,6 @@ cmd({
 cmd({
         pattern: "allnotes",
         category: "owner",
-        react: "💓",
         filename: __filename,
         desc: "Shows list of all notes."
     },
