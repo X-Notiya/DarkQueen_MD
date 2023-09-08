@@ -13,12 +13,12 @@ const readmore = long.repeat(4001)
 const Secktor = require('../lib/commands')
 
     //---------------------------------------------------------------------------
-Secktor.cmd({
+DarkQueen.cmd({
             pattern: "help",
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "💓",
+            react: "🧜‍♀️",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -47,10 +47,10 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `❋` + fancytext(Config.ownername.split('DARK QUEEN ')[0], 23) + ` ❋\n`
+                let str = `💓 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 💓\n`
                 str +=
                     '```' + `┏━━━━━●
-┃ 👋Hellow ${citel.pushName}
+┃```Hellow ${citel.pushName}```
 ┣━━━━━━━━━━●
 ┃ 🥀𝑇𝐻𝐸𝑀𝐸𝑆●➢...𝗗𝗔𝗥𝗞 𝗤𝗨𝗘𝗘𝗡
 ┃ 🧜‍♂️𝑂𝑊𝑁𝐸𝑅●➢ 𝐜𝐡𝐚𝐦𝐨𝐝𝐡
@@ -61,21 +61,32 @@ Secktor.cmd({
 ┃ 💓𝐷𝐴𝑇𝐸●➢${date}
 ┗━━━━━━━━━━●\n
 ` + '```'
+    str += `🅲🅾🅼🅼🅰🅽🅳 🅻🅸🆂🆃` ;
+      }
+      
+   }           
                  for (const category in cmds) 
                 {
-                   str += `┏━━🧜‍♀️${tiny(category)}🧜‍♀️━━●\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `┏━━🧚‍♂️${tiny(category)}🧚‍♂️━━●\n` ;      
-                        for (const plugins of cmds[category]) { str += `┃🧚‍♂️⃞➪ ${fancytext(plugins,1)}\n` ; }
-                        str += `┗━━━━━━━━━━━━✦\n`  ;
+                   str += `┏━━━━━━━━━━━━✦
+┃  ╭─────────────●
+┃  │ ⦿----❪ *_${tiny(category)}_* ❫----⦿
+┃  ╰┬────────────◆
+┃  ┌┤\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `┏━━━━━━━━━━━━✦
+┃  ╭─────────────◆
+┃  │ ⦿----❪$ *_{tiny(category)}_* ❫----⦿
+┃  ╰┬────────────◆
+┃  ┌┤\n` ;      
+                        for (const plugins of cmds[category]) { str += `┃ │${fancytext(plugins,1)}\n` ; }
+                        str += `╰━━━━━━━━━━━━━✦\n`  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `🧚‍♂️⃞➪ ${fancytext(plugins,1)}\n` ; }
-                         str += `┗━━━━━━━━━━━━✦\n`  ; 
+                   else { for (const plugins of cmds[category]) { str += `┃ │ ${fancytext(plugins,1)}\n` ; }
+                         str += `┃ ╰━━━━━━━━━━━━━━✦\n`  ; 
                    }
   
                 }
-                str+= `🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
-🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭`
+                str+= `┗━━━━━━━━━━━━✦`
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
@@ -85,7 +96,7 @@ Secktor.cmd({
         }
     )
     //---------------------------------------------------------------------------
-Secktor.cmd({
+DarkQueen.cmd({
             pattern: "list",
             desc: "list menu",
             category: "general"
@@ -117,7 +128,7 @@ for (let i = 0; i < commands.length; i++)
         }
     )
     //---------------------------------------------------------------------------
-Secktor.cmd({
+DarkQueen.cmd({
         pattern: "owner",
         desc: "To find owner number",
         category: "general",
@@ -136,8 +147,8 @@ Secktor.cmd({
             contacts: { displayName: Config.ownername, contacts: [{ vcard }] },
             contextInfo: {
                 externalAdReply: {
-                    title: '${latensie.toFixed(4)} ',
-                    body: Comfig.ownername,
+                    title: Config.ownername,
+                    body: 'Touch here.',
                     renderLargerThumbnail: true,
                     thumbnailUrl: ``,
                     thumbnail: log0,
@@ -154,7 +165,7 @@ Secktor.cmd({
     }
 )
 
-Secktor.cmd({
+DarkQueen.cmd({
     pattern: "file",
     desc: "to get extact name where that command is in repo.\nSo user can edit that.",
     category: "general",
