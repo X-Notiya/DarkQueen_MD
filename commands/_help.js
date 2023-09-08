@@ -1,13 +1,7 @@
 /**
- Copyright (C) 2022.
- Licensed under the  GPL-3.0 License;
- You may not use this file except in compliance with the License.
- It is supplied in the hope that it may be useful.
- * @project_name : Secktor-Md
- * @author : SamPandey001 <https://github.com/SamPandey001>
- * @description : Secktor,A Multi-functional whatsapp bot.
- * @version 0.0.6
- **/
+ 𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
+🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
+**/
 
 const os = require('os')
 const moment = require("moment-timezone")
@@ -53,19 +47,20 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
+                let str = `*` + fancytext(Config.ownername.split(' ')[0],58 '*\n`
                 str +=
-                    '```' + `│ ╭──────────────◆
-│ │ User:- ${citel.pushName}
-│ │ Owner:- ${Config.ownername}
-│ │ Plugins:- ${commands.length}
-│ │ Users:- ${total}
-│ │ Uptime:- ${runtime(process.uptime())}
-│ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-│ │ Time:- ${time}
-│ │ Date:- ${date}
-│ ╰──────────────◆
-╰───────────────⊷\n
+                    '```' + `┏━━━━━●
+┃👋.Hellow ${citel.pushName}
+┣━━━━━━━━━━●
+┃ 🥀𝑇𝐻𝐸𝑀𝐸𝑆●➢...𝗗𝗔𝗥𝗞 𝗤𝗨𝗘𝗘𝗡
+┃ 🧜‍♂️𝑂𝑊𝑁𝐸𝑅●➢ 𝐜𝐡𝐚𝐦𝐨𝐝𝐡
+┃ ❄️𝑂𝑊𝑁𝐸𝑅 𝑁𝑂●➢ 94711928777
+┃ 🐲𝑈𝑃𝑇𝐼𝑀𝐸●➢ ${runtime(process.uptime())}
+┃ 🍁𝑀𝐸𝑀𝑂𝑅𝑌●➢${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃ 💱𝑺𝑷𝑬𝑬𝑫${latensie.toFixed(4)} 
+┃ 💉𝑇𝐼𝑀𝐸●➢ ${time}
+┃ 💓𝐷𝐴𝑇𝐸●➢${date}
+┗━━━━━━━━━━●\n
 ` + '```'
                 for (const category in cmds) 
                 {
