@@ -3,6 +3,11 @@
 🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
 **/
 
+/**
+🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
+🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
+**/
+
 const { sck, sck1,cmd, jsonformat, botpic, TelegraPh, RandomXP, Config, tlang, warndb, sleep,getAdmin,getBuffer, prefix } = require('../lib')
 const moment = require("moment-timezone");
 const fs = require('fs-extra')
@@ -13,6 +18,7 @@ cmd({
             pattern: "left",
             desc: "Left from the group",
             category: "group cmd",
+            react: "💱"
             filename: __filename,
             use: 'group',
         },
@@ -27,3 +33,25 @@ cmd({
         }
     )
     //---------------------------------------------------------------------------
+cmd({
+            pattern: "setvar ?(.*)",
+            desc: "Set heroku env",
+            category: "heroku"
+            react: "💓",
+            filename: _filename,
+            use: "owner"
+    type: "heroku",
+  },
+  async (message, match) => {
+    if (!match) return await message.reply(`_Example: .setvar SUDO:94711928777`);
+    const [key, value] = match.split(":");
+    if (!key || !value) return await message.reply(`_Example: .setvar SUDO:94711928777`);
+    heroku.patch(baseURI + "/config-vars", {
+    body: { [key.toUpperCase()]: value },
+    }).then(async () => {
+    await message.reply(`_${key.toUpperCase()}: ${value}_`);
+    }).catch(async (error) => {
+    await message.reply(`HEROKU : ${error.body.message}`);
+    });
+  }
+);
