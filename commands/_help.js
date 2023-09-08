@@ -1,7 +1,7 @@
 /**
  🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
 🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
- **/
+**/
 
 const os = require('os')
 const moment = require("moment-timezone")
@@ -13,12 +13,12 @@ const readmore = long.repeat(4001)
 const Secktor = require('../lib/commands')
 
     //---------------------------------------------------------------------------
-DarkQueen.cmd({
+Secktor.cmd({
             pattern: "help",
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "🧜‍♀️",
+            react: "✨",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -47,10 +47,10 @@ DarkQueen.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `💓 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 💓\n`
+                let str = `❋` + fancytext(Config.ownername.split(' ')[0], 23) + ` ❋\n`
                 str +=
                     '```' + `┏━━━━━●
-┃Hellow ${citel.pushName}
+┃```Hellow ${citel.pushName}```
 ┣━━━━━━━━━━●
 ┃ 🥀𝑇𝐻𝐸𝑀𝐸𝑆●➢...𝗗𝗔𝗥𝗞 𝗤𝗨𝗘𝗘𝗡
 ┃ 🧜‍♂️𝑂𝑊𝑁𝐸𝑅●➢ 𝐜𝐡𝐚𝐦𝐨𝐝𝐡
@@ -61,17 +61,16 @@ DarkQueen.cmd({
 ┃ 💓𝐷𝐴𝑇𝐸●➢${date}
 ┗━━━━━━━━━━●\n
 ` + '```'
-              
-              for (const category in cmds) 
+                for (const category in cmds) 
                 {
-                   str += `┏━━━━━━━━━━━━✦
+                    str += `┏━━━━━━━━━━━━✦
 ┃  ╭─────────────●
-┃  │ ⦿----❪ *_${tiny(category)}_* ❫----⦿
+┃  │ ⦿----❪${tiny(category)}❫----⦿
 ┃  ╰┬────────────◆
 ┃  ┌┤\n` ;
                    if(text.toLowerCase() == category.toLowerCase()){ str = `┏━━━━━━━━━━━━✦
 ┃  ╭─────────────◆
-┃  │ ⦿----❪$ *_{tiny(category)}_* ❫----⦿
+┃  │ ⦿----❪${tiny(category)}❫----⦿
 ┃  ╰┬────────────◆
 ┃  ┌┤\n` ;      
                         for (const plugins of cmds[category]) { str += `┃ │${fancytext(plugins,1)}\n` ; }
@@ -88,12 +87,12 @@ DarkQueen.cmd({
                     image: { url: await botpic() },
                     caption: str
                 };
-                return await Void.sendMessage(citel.chat, buttonMessaged);
+                return await Void.sendMessage(citel.chat, buttonMMessaged);
             }
         }
     )
     //---------------------------------------------------------------------------
-DarkQueen.cmd({
+Secktor.cmd({
             pattern: "list",
             desc: "list menu",
             category: "general"
@@ -125,7 +124,7 @@ for (let i = 0; i < commands.length; i++)
         }
     )
     //---------------------------------------------------------------------------
-DarkQueen.cmd({
+Secktor.cmd({
         pattern: "owner",
         desc: "To find owner number",
         category: "general",
@@ -162,7 +161,7 @@ DarkQueen.cmd({
     }
 )
 
-DarkQueen.cmd({
+Secktor.cmd({
     pattern: "file",
     desc: "to get extact name where that command is in repo.\nSo user can edit that.",
     category: "general",
