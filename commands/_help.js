@@ -47,7 +47,7 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `❍━` + fancytext(Config.ownername.split(' ')[0],58 '━❍\n`
+                let str = `❍━` + fancytext(Config.ownername.split(' ')[0], 58) + `━❍\n`
                 str +=
                     '```' + `┏━━━━━●
 ┃👋.Hellow ${citel.pushName}
