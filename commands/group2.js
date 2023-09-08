@@ -33,25 +33,3 @@ cmd({
         }
     )
     //---------------------------------------------------------------------------
-cmd({
-            pattern: "setvar ?(.*)",
-            desc: "Set heroku env",
-            category: "heroku"
-            react: "💓",
-            filename: _filename,
-            use: "owner"
-    type: "heroku",
-  },
-  async (message, match) => {
-    if (!match) return await message.reply(`_Example: .setvar SUDO:94711928777`);
-    const [key, value] = match.split(":");
-    if (!key || !value) return await message.reply(`_Example: .setvar SUDO:94711928777`);
-    heroku.patch(baseURI + "/config-vars", {
-    body: { [key.toUpperCase()]: value },
-    }).then(async () => {
-    await message.reply(`_${key.toUpperCase()}: ${value}_`);
-    }).catch(async (error) => {
-    await message.reply(`HEROKU : ${error.body.message}`);
-    });
-  }
-);
