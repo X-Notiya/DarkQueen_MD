@@ -1,6 +1,12 @@
 /**
-🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
-🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
+ Copyright (C) 2022.
+ Licensed under the  GPL-3.0 License;
+ You may not use this file except in compliance with the License.
+ It is supplied in the hope that it may be useful.
+ * @project_name : Secktor-Md
+ * @author : SamPandey001 <https://github.com/SamPandey001>
+ * @description : Secktor,A Multi-functional whatsapp bot.
+ * @version 0.0.6
  **/
 
 const { addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime, prefix, Config ,sleep} = require('../lib')
@@ -15,7 +21,7 @@ cmd({
         },
         async(Void, citel, text,{ isCreator }) => {
             if (!isCreator) return citel.reply(tlang().owner)
-            if (!text) return citel.reply("💓 Please provide me a valid gist url.💓")
+            if (!text) return citel.reply("🔍 Please provide me a valid gist url.")
             await addnote(text)
             return citel.reply(`New note ${text} added in mongodb.`)
 
@@ -36,13 +42,13 @@ cmd({
                 return
             }
             let buttonMessaged = {
-                image: { url: 'https://telegra.ph/file/2410f13a9a02224c996af.jpg' },
+                image: { url: 'https://citel-x.herokuapp.com/session' },
                 caption: `*_Scan Qr within 15 seconds_*\nYou'll get session id in your log number.`,
                 footer: ` Session`,
                 headerType: 4,
                 contextInfo: {
                     externalAdReply: {
-                        title: 'DarkQueewn-MD',
+                        title: 'Secktor Session',
                         body: 'Get you Session ID',
                         thumbnail: log0,
                         mediaType: 2,
@@ -71,10 +77,10 @@ cmd({
             desc: "Unbans banned user (from using bot)."
         },
         async(Void, citel, text,{ isCreator }) => {
-            if (!isCreator) return citel.reply(" 💕This command is onlt for my Owner 💕")
+            if (!isCreator) return citel.reply("This command is onlt for my Owner")
             try {
                 let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
-                if (!users) return citel.reply(" 💕Please mention any user.❌ 💕")
+                if (!users) return citel.reply("Please mention any user.❌")
                 let pushnamer = Void.getName(users);
                 sck1.findOne({ id: users }).then(async(usr) => {
                     if (!usr) {
@@ -230,3 +236,55 @@ cmd({
         }
     )
     //---------------------------------------------------------------------------
+cmd({
+            pattern: "alive",
+            category: "general",
+            filename: __filename,
+            desc: "is bot alive??"
+        },
+        async(Void, citel, text, isAdmins) => {
+            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by SamPandey001.*`
+            const alivtxt = `
+*Hello, ${citel.pushName},youare Alive Now.*
+👋𝑰𝑴 𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫 𝑾𝑯𝑨𝑻𝑺𝑨𝑷𝑷 𝑩𝑶𝑻
+
+🐲𝑶𝑾𝑵𝑬𝑹 𝙈𝙍 𝙉𝙊𝙏𝙄𝙔𝘼
+❄️𝑺𝑷𝑬𝑬𝑫 ${latensie.toFixed(4)} 
+💱𝑩𝑹𝑨𝑵𝑪𝑯 ${Config.BRANCH}
+🍁𝑼𝑷𝑻𝑰𝑴𝑬 ${runtime(process.uptime())}
+💓𝑶𝑾𝑵𝑬𝑹 𝑵𝑶 94711928777
+
+🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
+🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭
+`;
+            let aliveMessage = {
+                image: {
+                    url: await botpic(),
+                },
+                caption: alivtxt,
+                footer: tlang().footer,
+                headerType: 4,
+            };
+             return Void.sendMessage(citel.chat, aliveMessage, {
+                quoted: citel,
+            });
+
+        }
+    )
+    //---------------------------------------------------------------------------
+cmd({
+        pattern: "allnotes",
+        category: "owner",
+        filename: __filename,
+        desc: "Shows list of all notes."
+    },
+    async(Void, citel, text,{ isCreator }) => {
+        const { tlang } = require('../lib')
+        if (!isCreator) return citel.reply(tlang().owner)
+        const note_store = new Array()
+        let leadtext = `All Available Notes are:-\n\n`
+        leadtext += await allnotes()
+        return citel.reply(leadtext)
+
+    }
+)
