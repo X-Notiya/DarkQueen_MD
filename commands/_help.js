@@ -1,7 +1,13 @@
 /**
- 𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
-🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
-**/
+ Copyright (C) 2022.
+ Licensed under the  GPL-3.0 License;
+ You may not use this file except in compliance with the License.
+ It is supplied in the hope that it may be useful.
+ * @project_name : Secktor-Md
+ * @author : SamPandey001 <https://github.com/SamPandey001>
+ * @description : Secktor,A Multi-functional whatsapp bot.
+ * @version 0.0.6
+ **/
 
 const os = require('os')
 const moment = require("moment-timezone")
@@ -18,7 +24,7 @@ Secktor.cmd({
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "🧜‍♂️",
+            react: "🧜‍♀️",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -47,38 +53,38 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `❍━` + fancytext(Config.ownername.split(' ')[0], 58) + `━❍\n`
+                let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
                 str +=
-                    '```' + `┏━━━━━●
-┃👋.Hellow ${citel.pushName}
-┣━━━━━━━━━━●
-┃ 🥀𝑇𝐻𝐸𝑀𝐸𝑆●➢...𝗗𝗔𝗥𝗞 𝗤𝗨𝗘𝗘𝗡
-┃ 🧜‍♂️𝑂𝑊𝑁𝐸𝑅●➢ 𝐜𝐡𝐚𝐦𝐨𝐝𝐡
-┃ ❄️𝑂𝑊𝑁𝐸𝑅 𝑁𝑂●➢ 94711928777
-┃ 🐲𝑈𝑃𝑇𝐼𝑀𝐸●➢ ${runtime(process.uptime())}
-┃ 🍁𝑀𝐸𝑀𝑂𝑅𝑌●➢${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃ 💱𝑺𝑷𝑬𝑬𝑫${latensie.toFixed(4)} 
-┃ 💉𝑇𝐼𝑀𝐸●➢ ${time}
-┃ 💓𝐷𝐴𝑇𝐸●➢${date}
-┗━━━━━━━━━━●\n
+                    '```' + `│ ╭──────────────◆
+│ │ 𝐔𝐒𝐄𝐑𝐒:- ${citel.pushName}
+│ │ 𝐎𝐖𝐍𝐄𝐑:- ${Config.ownername}
+│ │ 𝐏𝐋𝐈𝐆𝐈𝐍𝐒:- ${commands.length}
+│ │ 𝐔𝐒𝐄𝐑𝐒:- ${total}
+│ │ 𝐔𝐏𝐓𝐈𝐌𝐄:- ${runtime(process.uptime())}
+│ │ 𝐌𝐄𝐌𝐎𝐑𝐘:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+│ │ 𝐓𝐈𝐌𝐄:- ${time}
+│ │ 𝐃𝐀𝐓𝐄:- ${date}
+│ ╰──────────────◆
+╰───────────────⊷\n
 ` + '```'
+                
                 for (const category in cmds) 
                 {
                     str += `┏━━━━━━━━━━━━✦
 ┃  ├─────────────●
-┃  │ ⦿----💓${tiny(category)}💓----⦿
+┃  │ ⦿----❪${tiny(category)}❫----⦿
 ┃  ╰┬────────────◆
 ┃  ┌┤\n` ;
                    if(text.toLowerCase() == category.toLowerCase()){ str = `┏━━━━━━━━━━━━✦
 ┃  ├─────────────◆
-┃  │ ⦿----💓${tiny(category)}💓----⦿
+┃  │ ⦿----❪${tiny(category)}❫----⦿
 ┃  ╰┬────────────◆
 ┃  ┌┤\n` ;      
-                        for (const plugins of cmds[category]) { str += `┃ │${fancytext(plugins,1)}\n` ; }
+                        for (const plugins of cmds[category]) { str += `┃ │🧚‍♂️⃞➪ ${fancytext(plugins,1)}\n` ; }
                         str += `╰━━━━━━━━━━━━━✦\n`  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `┃ │ ${fancytext(plugins,1)}\n` ; }
+                   else { for (const plugins of cmds[category]) { str += `┃ │ 🧚‍♂️⃞➪ ${fancytext(plugins,1)}\n` ; }
                          str += `┃ ╰━━━━━━━━━━━━━━✦\n`  ; 
                    }
   
@@ -129,7 +135,7 @@ Secktor.cmd({
         pattern: "owner",
         desc: "To find owner number",
         category: "general",
-        react: "💜",
+        react: "🧜‍♂️",
         filename: __filename
     },
     async(Void, citel) => {
