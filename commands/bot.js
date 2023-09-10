@@ -74,7 +74,5 @@ BOT COMMANDS LIST
                 return await Void.sendMessage(citel.chat, buttonMessaged);
             }
         }
-    )return citel.reply(arr.join('\n'));
-
-
+            
 })
