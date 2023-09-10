@@ -18,7 +18,7 @@ const speed = require('performance-now')
 Function({
 	pattern: 'md',
 	fromMe: isPublic,
-	type: 'info'
+	category: 'info'
 }, async (message, match, client) => {
 	const commandslist = {}
 	commands.map(async (command, index) => {
