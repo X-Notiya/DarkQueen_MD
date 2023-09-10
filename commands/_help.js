@@ -87,17 +87,23 @@ Secktor.cmd({
                     footer: tlang().title,
                     headerType: 4
                        externalAdReply: {
-                    title: "𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧 𝐌𝐃",
-                    body: "ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ",
-                    thumbnail: "https://telegra.ph/file/3580e4bfbc324e93918ad.jpg"
-                    mediaType: 4,
-                    mediaUrl: 'https://github.com/X-Notiya/DarkQueen_MD',
-                    sourceUrl: ``,
-                };
-                return await Void.sendMessage(citel.chat, buttonMessaged);
-            }
+                           title: "𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧 𝐌𝐃",
+                           body: "ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ",
+                           thumbnail: "https://telegra.ph/file/3580e4bfbc324e93918ad.jpg"
+                           mediaType: 4,
+                           mediaUrl: 'https://github.com/X-Notiya/DarkQueen_MD',
+                           sourceUrl: ``,
+                       },
+                    
+                    },
+                    
+                }, return await Void.sendMessage(citel.chat, buttonMessaged);
+                });
+                
         }
-    )
+        
+}
+              
     //---------------------------------------------------------------------------
 Secktor.cmd({
             pattern: "list",
