@@ -1,15 +1,5 @@
-/**
-█▀█ █░█ █▀▀ █▀▀ █▄░█   █▄░█ █▀▀ ▀█▀ █░█ █░█   █▀▄▀█ █▀▄   █▄▄ █▀█ ▀█▀
-▀▀█ █▄█ ██▄ ██▄ █░▀█   █░▀█ ██▄ ░█░ █▀█ █▄█   █░▀░█ █▄▀   █▄█ █▄█ ░█░
-
- Copyright (C) 2023.
- Licensed under the  GPL-3.0 License;
- You may not use this file except in compliance with the License.
- It is supplied in the hope that it may be useful.
- * @project_name : QueenNethu-Md
- * @author : MR.Hansamala <https://github.com/mrhansamala>
- * @description : Nethu,A Multi-functional whatsapp bot.
- * @version 0.0.6
+/**🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
+🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩* @version 0.0.1
  **/
 
 const os = require('os')
@@ -20,13 +10,14 @@ let { fancytext, tlang, tiny, runtime, formatp, botpic, prefix, sck1 } = require
 const long = String.fromCharCode(8206)
 const readmore = long.repeat(4001)
 const Secktor = require('../lib/commands')
+
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "bot",
-            alias: ["md"],
+            pattern: "bot cmd",
+            alias: ["bot"],
             desc: "bot list",
             category: "general",
-            react: "🧚",
+            react: "🎭",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -55,32 +46,35 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `✶━━┉┉┉┉┉━╾╾━┉┉┉┉┉━━✶` + fancytext(Config.ownername.split(' ')[0], 58) +`❍━𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴━❍`
+                let str = `✦` + fancytext(Config.ownername.split(' ')[0], 58) + ` ✦\n`
                 str +=
-                    '```' + `BOT LIST
+                    '```' + `❍━━━━━━━━━━❍
+BOT COMMANDS LIST
+❍━━━━━━━━━━❍
 ` + '```'
-                str += `◍◈┈─┈『 ` + fancytext('Commands', 57) + `』┈─┈◈◍`
-                for (const category in cmds) {
-                    str += `
-┎─┈─┈─┈─◈◎◈─┈─┈─┈◎
-┃ ${tiny(darkqueen)}
-┖─┈──┈─◈◎◈─┈─┈─┈─◎
-┃  ┌┤\n`
-                    for (const plugins of cmds[category]) {
-                        str += `┃ ║🌸⃢⃪⃫͖͖͖͖͖֕͘͘🧚‍♀️◊ ${plugins}\n`
-                    }
-                    str += `╰════┉╍┉╍┉╍┉══════✶`
+                for (const category in cmds) 
+                {
+                   str += `●━💓${tiny(darkqueen)}💓━●\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `●━💓${tiny(darkqueen)}💓━●\n` ;      
+                        for (const plugins of cmds[category]) { str += `💓⃢✦ ${fancytext(plugins,1)}\n` ; }
+                        str += `✦━━━━━━━━━━✦\n`  ;
+                        break ;
+                   }
+                   else { for (const plugins of cmds[category]) { str += `💓⃢✦ ${fancytext(plugins,1)}\n` ; }
+                         str += `✦━━━━━━━━━━✦\n`  ; 
+                   }
+  
                 }
-
-                str += `\n╚════┉╍┉╍┉╍┉══════✶\n`
+                str+= `🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
+🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭 `
                 let buttonMessaged = {
                     image: { url: await botpic() },
-                    caption: str,
-                    footer: tlang().title,
-                    headerType: 4
+                    caption: str
                 };
                 return await Void.sendMessage(citel.chat, buttonMessaged);
             }
         }
-    )
-    //---------------------------------------------------------------------------
+    )return citel.reply(arr.join('\n'));
+
+
+})
