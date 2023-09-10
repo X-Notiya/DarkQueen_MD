@@ -1,24 +1,10 @@
-const {
-	Function,
-	addAudioMetaData,
-	isUrl,
-	getBuffer,
-	prefix,
-	getString,
-	isPublic,
-	ytIdRegex,
-	getJson,
-	sendwithLinkpreview,
-	toAudio,
-	download,
-	h2k
-} = require('../lib/');
-const { downloadYouTubeVideo, downloadYouTubeAudio, mixAudioAndVideo, combineYouTubeVideoAndAudio, getYoutubeThumbnail, video, bytesToSize } = require('../lib/mediafire.js');
-const yts = require("yt-search")
-const config = require('../config');
-const Lang = getString('scrapers');
-const fs = require('fs');
-const t = "```";
+const { tlang, ringtone, cmd,fetchJson, sleep, botpic,ffmpeg, getBuffer, pinterest, prefix, Config } = require('../lib')
+const { mediafire } = require("../lib/mediafire.js");
+const googleTTS = require("google-tts-api");
+const ytdl = require('ytdl-secktor')
+const fs = require('fs-extra')
+var videotime = 60000 // 1000 min
+var dlsize = 1000 // 1000mb
 
 const send = async (message, file, id) => config.SONG_THUMBNAIL ? await sendwithLinkpreview(message.client, message, file,  'https://www.youtube.com/watch?v=' + id) : await message.client.sendMessage(message.chat, { audio: file, mimetype: 'audio/mpeg' }, { quoted: message.data });
 
