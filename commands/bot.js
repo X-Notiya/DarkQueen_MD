@@ -2,7 +2,7 @@
 🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
 🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
 */
-const { Module } = require("..lib");
+const { Module } = require("..lib/");
 const Jimp = require("jimp");
 
 cmd({
