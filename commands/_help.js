@@ -1,5 +1,12 @@
-/**🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
-🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
+/**
+ Copyright (C) 2022.
+ Licensed under the  GPL-3.0 License;
+ You may not use this file except in compliance with the License.
+ It is supplied in the hope that it may be useful.
+ * @project_name : Secktor-Md
+ * @author : SamPandey001 <https://github.com/SamPandey001>
+ * @description : Secktor,A Multi-functional whatsapp bot.
+ * @version 0.0.6
  **/
 
 const os = require('os')
@@ -46,45 +53,43 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `🍁 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 🍁\n`
+                let str = `╭───《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》───●\n`
                 str +=
-                    '' + `𝗛𝗜 ${citel.pushName}
-╔══════❍
-║𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧 𝐌𝐃
-╠══════════❍
-║ 𝐔𝐒𝐄𝐑:- ${citel.pushName}
-║ 𝐓𝐇𝐄𝐌𝐄𝐒:- ${tlang().title}
-║ 𝐏𝐑𝐄𝐅𝐈𝐗:-  ${prefix} 
-║ 𝐎𝐖𝐍𝐄𝐑:- ᴍʀ•ɴᴏᴛɪʏᴀ
-╚══════════❍
-
-🅲🅾🅼🅼🅰🅽🅳🆂 🅻🅸🆂🆃🆂\n
-` + ''
+                    '```' + `│ ╭─────────●
+│ │ User:- ${citel.pushName}
+│ │ Theme:- ${tlang().title}
+│ │ Prefix:- [ ${prefix} ]
+│ │ Owner:- ${Config.ownername}
+│ │ Plugins:- ${commands.length}
+│ │ Users:- ${total}
+│ │ Uptime:- ${runtime(process.uptime())}
+│ ╰──────────●
+┗━━━━━━━━━━━━✦\n
+` + '```'
                 for (const category in cmds) 
                 {
-                   str += `┏━━━━━━━━━━●
-┃  ╭─────────────◆
-┃  │ ⦿----☘ ${cmmd} ☘----⦿
+                   str += `┏━━━━━━━━━━━━━━❍
+┃  ┌─────────────◆
+┃  │ ⦿---🎩${tiny(category)}🎩----⦿
 ┃  ╰┬────────────◆
-┃  ┌┘` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `┏━━━━━━━━━━●    
+┃  ┌┘\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `┏━━━━━━━━━━━━━━━━❍
 ┃  ╭─────────────◆
 ┃  │ ⦿----🎩${tiny(category)}🎩----⦿
 ┃  ╰┬────────────◆
-┃  ┌┘` ;      
-                        for (const plugins of cmds[category]) { str += `┃ │🍁⃞➢ ${fancytext(plugins,1)}\n` ; }
-                        str += `┃ ╰──────────●
-┗━━━━━━━━━━✦\n`  ;
+┃  ┌┘\n` ;      
+                        for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
+                        str += `┃ ╰──────────●\n`  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `┃ │💕⃞➢ ${fancytext(plugins,1)}\n` ; }
-                         str += `┃ ╰──────────●
-┗━━━━━━━━━━✦\n`  ; 
+                   else { for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
+                         str += `┃ ╰──────────●\n`  ; 
                    }
   
                 }
-                str+= `🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
-🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭`
+                str+= `┗━━━━━━━━━━━━━━━━❍
+🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
+🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭 `
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
@@ -95,8 +100,8 @@ Secktor.cmd({
     )
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "cmd",
-            desc: "cmd1",
+            pattern: "list",
+            desc: "list menu",
             category: "general"
         },
         async(Void, citel) => {
@@ -130,7 +135,7 @@ Secktor.cmd({
         pattern: "owner",
         desc: "To find owner number",
         category: "general",
-        react: "🍁",
+        react: "💜",
         filename: __filename
     },
     async(Void, citel) => {
