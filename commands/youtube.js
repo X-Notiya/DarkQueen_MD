@@ -8,7 +8,7 @@ var dlsize = 1000 // 1000mb
 
 const send = async (message, file, id) => config.SONG_THUMBNAIL ? await sendwithLinkpreview(message.client, message, file,  'https://www.youtube.com/watch?v=' + id) : await message.client.sendMessage(message.chat, { audio: file, mimetype: 'audio/mpeg' }, { quoted: message.data });
 
-Function({
+cmd({
   on: 'text',
   fromMe: isPublic,
 }, async (message, match, client) => {
@@ -90,11 +90,11 @@ Function({
   }
 });
 
-Function({
+cmd({
 	pattern: 'play ?(.*)',
 	fromMe: isPublic,
 	desc: 'play youtube audio and video',
-	type: 'download'
+	category: 'download'
 }, async (message, match, client) => {
 match = match || message.reply_message.text
 if (!match) return await message.reply('*Need text!*\n_Example: .play astronaut in the ocean_');
@@ -115,11 +115,11 @@ const msg = `*${search.videos[0].title}*
 await message.send(await getYoutubeThumbnail(search.videos[0].videoId), 'image', { caption: msg})
 })
 
-Function({
+cmd({
 	pattern: 'song ?(.*)',
 	fromMe: isPublic,
 	desc: Lang.SONG_DESC,
-	type: 'download'
+	category: 'download'
 }, async (message, match, client) => {
 	match = match || message.reply_message.text
 	if (!match) return message.reply(Lang.NEED_TEXT_SONG)
@@ -164,11 +164,11 @@ Function({
 	 */
 });
 
-Function({
+cmd({
 	pattern: 'video ?(.*)',
 	fromMe: isPublic,
 	desc: Lang.VIDEO_DESC,
-	type: 'download'
+	category: 'download'
 }, async (message, match, client) => {
 	match = match || message.reply_message.text
 	if (!match) return message.reply('*Need Youtube video url or query*')
@@ -204,11 +204,12 @@ Function({
 	*/
 });
 
-Function({
+cmd({
 	pattern: 'yta ?(.*)',
 	fromMe: isPublic,
 	desc: 'download audios from youtube',
-	type: 'download'
+	category: 'download'
+
 }, async (message, match, client) => {
 	match = match || message.reply_message.text
 	if (!match) return message.reply('_Need url or song name!_\n*Example: .yta url/song name*')
@@ -242,7 +243,7 @@ Function({
 	pattern: 'ytv ?(.*)',
 	fromMe: isPublic,
 	desc: 'download videos from youtube',
-	type: 'download'
+	category: 'download'
 }, async (message, match, client) => {
 	match = match || message.reply_message.text
 	if (!match) return message.reply('_Need url or video name!_\n*Example: .ytv url/video name*')
