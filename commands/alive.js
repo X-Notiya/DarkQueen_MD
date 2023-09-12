@@ -5,10 +5,11 @@ const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', da
 
 //---------------------------------------------------------------------------
 cmd({
-            pattern: "online",
+            pattern: "alive",
             desc: "Show Live Time Of Pakistan",
             category: "fun",
-	          filename: __filename,
+            react: "🧜‍♂️"
+            filename: __filename,
             use: '<group link.>',
         },
         async(Void, citel, text,{ isCreator }) => {
