@@ -1,18 +1,22 @@
 /**
 🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
 🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
-**/
+  cmd({
+             pattern: "weeb-pack",
+             category: "weeb",
+             desc: "Searches Info about character."
+         },
+ **/
 
  const axios = require('axios')
  const { Anime, Manga ,Character  } = require("@shineiichijo/marika");
  const { tlang, cmd, fetchJson, getBuffer, prefix } = require('../lib/')
      //---------------------------------------------------------------------------
 
-cmd({
+ cmd({
              pattern: "character",
              category: "weeb",
              desc: "Searches Info about character."
-             react: '💓'
          },
          async(Void, citel, text) => {
              if (!text[1]) return citel.reply(`Please give a Name ${tlang().greet}!`)
@@ -23,7 +27,7 @@ cmd({
              });
              let texty = "";
              texty += `🏮*Name: ${chara.data[0].name}*\n`;
-             texty += `🌐 *Source:* _𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧 𝐌𝐃_\n`;
+             texty += `🌐 *Source:* _Dark Queen MDt_\n`;
              texty += `📶 *URL:* ${chara.data[0].url}*\n\n`;
              texty += `*📑 Description*: ${chara.data[0].about}\n`;
              let gis = require("async-g-i-s");
@@ -34,11 +38,10 @@ cmd({
  }
  )
  //---------------------------------------------------------------------------
-.cmd({
+ cmd({
   pattern: "ranime",
   category: "weeb",
   desc: "Info about random anime."
-  react: "🧚‍♂️",
 },
 async(Void, citel, text) => {
   const { Anime, Manga ,Character  } = require("@shineiichijo/marika");
@@ -50,7 +53,7 @@ async(Void, citel, text) => {
             });
             let texty = "";
             texty += `🏮*Name: ${chara.data[0].name}*\n`;
-            texty += `🌐 *Source:* _𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧 𝐌𝐃_\n`;
+            texty += `🌐 *Source:* _Dark Queen MD_\n`;
             texty += `📶 *URL:* ${chara.data[0].url}*\n\n`;
             texty += `*📑 Description*: ${chara.data[0].about}\n`;
             let gis = require("async-g-i-s");
@@ -66,7 +69,6 @@ async(Void, citel, text) => {
      pattern: "anime",
      category: "weeb",
      desc: "Searches Info about Anime and Provides result."
-     react: '❄️'
  },
  async(Void, citel, text) => {
      const client = new Anime();
@@ -124,7 +126,6 @@ async(Void, citel, text) => {
          pattern: "animenews",
          category: "weeb",
          desc: "Anime News"
-         react: '😈'
      },
      async(Void, citel, text) => {
          let qq = [
@@ -164,7 +165,6 @@ async(Void, citel, text) => {
          pattern: "animepic",
          category: "weeb",
          desc: "Anime image"
-         react: "🦂"
      },
      async(Void, citel, text) => {
          var pictured = "Anime Pics HD ";
@@ -201,7 +201,6 @@ async(Void, citel, text) => {
      pattern: "neko",
      category: "weeb",
      desc: "Sends a Neko Image in chat"
-     react: "👾"
  },
  async(Void, citel, text) => {
      nekodds = await axios.get("https://waifu.pics/api/sfw/neko");
@@ -223,7 +222,6 @@ async(Void, citel, text) => {
          pattern: "animewall",
          category: "weeb",
          desc: "Anime Wallpaper Random"
-         react: "🥀"
      },
      async(Void, citel, text) => {
          try {
@@ -264,7 +262,6 @@ async(Void, citel, text) => {
      pattern: "foxgirl",
      category: "weeb",
      desc: "Sends image of Fox Girl in current chat."
-     react: "🎩"
  },
  async(Void, citel, text) => {
      waifuddfg = await axios.get(`https://nekos.life/api/v2/img/fox_girl`);
@@ -283,7 +280,6 @@ async(Void, citel, text) => {
      pattern: "loli",
      category: "weeb",
      desc: "Sends image of loli in current chat."
-     react: "🧜‍♂️"
  },
  async(Void, citel, text) => {
      waifud = await axios.get("https://waifu.pics/api/sfw/shinobu");
@@ -307,7 +303,6 @@ async(Void, citel, text) => {
      pattern: "manga",
      category: "weeb",
      desc: "Sends info about asked manga."
-     react: "🧣"
  },
  async(Void, citel, text) => {
      const { Manga } = require("@shineiichijo/marika");
@@ -349,7 +344,6 @@ async(Void, citel, text) => {
      pattern: "waifu",
      category: "weeb",
      desc: "Sends image of waifu in current chat."
-     react: "🧜‍♀️"
  },
  async(Void, citel, text) => {
      const data = await fetchJson(`https://api.waifu.im/random/?selected_tags=waifu`)
@@ -369,7 +363,6 @@ async(Void, citel, text) => {
      pattern: "pokepic",
      category: "weeb",
      desc: "Sends image of pokemon in current chat."
-     react: "🐲"
  },
  async(Void, citel, text) => {
  let gis = require("async-g-i-s");
@@ -405,7 +398,6 @@ async(Void, citel, text) => {
      pattern: "pokemon",
      category: "weeb",
      desc: "Sends info of pokemon in current chat."
-     react: "🎭"
  },
  async(Void, citel, text) => {
      try {
