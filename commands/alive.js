@@ -5,7 +5,7 @@ const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', da
 
 //---------------------------------------------------------------------------
 cmd({
-            pattern: "alive",
+            pattern: "online",
             desc: "Show Live Time Of Pakistan",
             category: "fun",
 	          filename: __filename,
