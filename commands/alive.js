@@ -8,8 +8,7 @@ cmd({
             pattern: "alive",
             desc: "Show Live Time Of Pakistan",
             category: "fun",
-            react: "🧜‍♂️"
-            filename: __filename,
+	          filename: __filename,
             use: '<group link.>',
         },
         async(Void, citel, text,{ isCreator }) => {
