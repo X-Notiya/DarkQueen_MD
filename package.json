@@ -1,15 +1,15 @@
 {
-               "name": "suhail-md",
+               "name": "X-Notiya",
                "version": "1.0.5",
-               "description": "Multi device whatsapp bot by SuhailTechInfo.",
+               "description": "Multi device whatsapp bot by X-Notiya.",
                "main": "lib/client.js",
                "type": "commonjs",
                "license": "GPL-3.0",
    "scripts": {
-                "start": "pm2 start lib/client.js --deep-monitoring --attach --name Suhail-Md",
-                "stop": "pm2 stop Suhail-Md"
+                "start": "pm2 start lib/client.js --deep-monitoring --attach --name Dark-Queen",
+                "stop": "pm2 stop Dark-Queen"
                 },
-               "author": "SuhailTechInfo",
+               "author": "X-Notiya",
               "dependencies": {
                        "@sampandey001/baileys": "latest",
                        "@adiwajshing/keyed-db": "^0.2.4",
@@ -72,10 +72,10 @@
                     },
                  "repository": {
                  "type": "git",
-                 "url": "git+https://github.com/SuhailTechInfo/Suhail-Md.git"
+                 "url": "git+https://github.com/X-Notiya/-.git"
                   },
                  "bugs": {
-                 "url": "https://github.com/SuhailTechInfo/Suhail-Md/issues"
+                 "url": "https://github.com/X-Notiya/-/issues"
                   },
-                 "homepage": "https://github.com/SuhailTechInfo/Suhail-Md#readme"
+                 "homepage": "https://github.com/X-Notiya/-#readme"
                   }
