@@ -11,7 +11,7 @@
                 },
                "author": "dark-queen",
               "dependencies": {
-                       "@whiskeysockets/baileys": "git+https://github.com/X-Notiya/baileys", 
+                       "@whiskeysockets/baileys": "git+https://github.com/WhiskeySockets/Baileys", 
                        "@adiwajshing/keyed-db": "^0.2.4",
                        "awesome-phonenumber": "^3.3.0",
                        "anime-character-random": "latest",
