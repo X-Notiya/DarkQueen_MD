@@ -59,7 +59,7 @@
                        "translatte": "^3.0.1",
                        "util": "^0.12.4", 
                        "@sl-code-lords/esana-news": "latest",
-                       "moment": "2.29.4",
+                       "moment-timezone": "^0.5.34",
                        "secktor-pack": "latest",
                        "ytdl-secktor": "^0.0.1-development",
                        "pastebin-js": "latest",
