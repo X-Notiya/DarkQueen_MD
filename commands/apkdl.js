@@ -18,7 +18,7 @@ const long = String.fromCharCode(8206)
 const readmore = long.repeat(4001)
 const Secktor = require('../lib/commands')
 
-AMDI({ cmd: "fmmods", desc: "Fouad-whatsapp mods downloader", type: "download", react: "🧚‍♂️" }, (async (amdiWA) => {
+AMDI({ cmd: "fmmods", desc: "Fouad-whatsapp mods downloader", category: "download", react: "🧚‍♂️" }, (async (amdiWA) => {
     let { footerTXT, input, prefix, react, reply, sendDocument, sendListMsg } = amdiWA.msgLayout;
 
     const fmmods = await fmmod_com();
@@ -70,7 +70,7 @@ AMDI({ cmd: "fmmods", desc: "Fouad-whatsapp mods downloader", type: "download", 
 }));
 
 
-AMDI({ cmd: "apk", desc: Lang.APKDL_DESC, type: "download", react: "🧚‍♂️" }, (async (amdiWA) => {
+AMDI({ cmd: "apk", desc: Lang.APKDL_DESC, category: "download", react: "🧚‍♂️" }, (async (amdiWA) => {
     let { input, isPlaystore, sendCustomButton, sendListMsg, prefix, react, reply } = amdiWA.msgLayout;
 
     if (!input) return await reply(Lang.APK_EXAMPLE, "❓");
