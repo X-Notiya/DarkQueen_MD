@@ -1,22 +1,26 @@
 {
-               "name": "DarkQueen",
-               "version": "0.0.7",
-               "description": "Multi device whatsapp bot by X-Notiya.",
+               "name": "Dark Queen MD",
+               "version": "0.0.1",
+               "description": "Multi device whatsapp bot by dark-queen.",
                "main": "lib/client.js",
                "type": "commonjs",
                "license": "GPL-3.0",
    "scripts": {
-                "start": "pm2 start lib/client.js --deep-monitoring --attach --name DarkQueen",
-                "stop": "pm2 stop 💓DarkQueen💓"
+                "start": "pm2 start lib/client.js --deep-monitoring --attach --name dark-queen",
+                "stop": "pm2 stop dark-queen"
                 },
-               "author": "SamPandey001",
+               "author": "dark-queen",
               "dependencies": {
-                       "@sampandey001/baileys": "latest", 
+                       "@whiskeysockets/baileys": "git+https://github.com/X-Notiya/baileys", 
                        "@adiwajshing/keyed-db": "^0.2.4",
                        "awesome-phonenumber": "^3.3.0",
                        "anime-character-random": "latest",
+                       "@sl-code-lords/esana-news":"latest",
+                       "aptoide-scraper": "latest",
+                       "google-play-scraper": "latest",
                        "axios": "^0.24.0",
                        "cheerio": "^1.0.0-rc.10",
+                       "megajs":"latest",
                        "crypto-js":"latest",
                        "chalk": "^4.1.2",
                        "@hapi/boom": "^9.1.4",
@@ -34,6 +38,7 @@
                        "form-data": "^4.0.0",
                        "ffmpeg": "^0.0.4",
                        "fluent-ffmpeg": "^2.1.2",
+                       "fb-info-video": "^1.0.2",
                        "heroku-client": "3.1.0",
                        "async-g-i-s": "^1.4.0",
                        "human-readable": "^0.2.1",
@@ -54,9 +59,8 @@
                        "translatte": "^3.0.1",
                        "util": "^0.12.4",           
                        "secktor-pack": "latest",
-                       "ytdl-secktor": "latest",
+                       "ytdl-secktor": "git+ssh://git@github.com:khlevon/node-ytdl-core.git#v4.11.4-patch.2",
                        "pastebin-js": "latest",
-                       "fb-info-video":"^1.0.2",
                        "wa-sticker-formatter": "^4.3.2"
                       },
                   "directories": {
@@ -68,7 +72,7 @@
                     },
                  "repository": {
                  "type": "git",
-                 "url": "git+https://github.com/X-Notiya/-"
+                 "url": "git+https://github.com/X-Notiya/-.git"
                   },
                  "bugs": {
                  "url": "https://github.com/X-Notiya/-/issues"
