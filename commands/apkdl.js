@@ -1,12 +1,6 @@
-/**
- Copyright (C) 2022.
- Licensed under the  GPL-3.0 License;
- You may not use this file except in compliance with the License.
- It is supplied in the hope that it may be useful.
- * @project_name : Secktor-Md
- * @author : SamPandey001 <https://github.com/SamPandey001>
- * @description : Secktor,A Multi-functional whatsapp bot.
- * @version 0.0.6
+/**🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
+🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
+* @version 0.0.1
  **/
 
 const os = require('os')
@@ -18,7 +12,7 @@ const long = String.fromCharCode(8206)
 const readmore = long.repeat(4001)
 const Secktor = require('../lib/commands')
 
-AMDI({ cmd: "fmmods", desc: "Fouad-whatsapp mods downloader", category: "download", react: "🧚‍♂️" }, (async (amdiWA) => {
+cmd({ category: "fmmods", desc: "Fouad-whatsapp mods downloader", category: "download", react: "🧚‍♂️" }, (async (amdiWA) => {
     let { footerTXT, input, prefix, react, reply, sendDocument, sendListMsg } = amdiWA.msgLayout;
 
     const fmmods = await fmmod_com();
@@ -66,56 +60,4 @@ AMDI({ cmd: "fmmods", desc: "Fouad-whatsapp mods downloader", category: "downloa
     } catch (e) {
         console.log(e);
         return await reply("Error".fetchError(e), "❌", 1);
-    }
-}));
-
-
-AMDI({ cmd: "apk", desc: Lang.APKDL_DESC, category: "download", react: "🧚‍♂️" }, (async (amdiWA) => {
-    let { input, isPlaystore, sendCustomButton, sendListMsg, prefix, react, reply } = amdiWA.msgLayout;
-
-    if (!input) return await reply(Lang.APK_EXAMPLE, "❓");
-
-    try {
-        if (input && isPlaystore(input)) {
-            const psAPI = await blackamda_API("playstore", `package=${input}`, amdiWA.botNumberJid);
-            const response = await axios.get(psAPI);
-            const json = response.data
-
-            if (json.status.error) return await reply("Error".fetchError({ message: json.status.message }), "❌", 1);
-            if (json.size.isLarge) return await reply(Lang.OVER_WA_FILE);
-
-            await react("⬇️");
-            const buttons = [
-                { buttonId: `${prefix}ps ${input}`, buttonText: { displayText: 'ℹ️ App Info' }, type: 1 }
-            ]
-
-            const text = `${Lang.APK_TITLE}
-        ╔══════❍
-        ║📚 App name: ${json.app_name}
-        ║🧰 Version: ${json.version}
-        ╚══════❍`
-
-            await react("⬆️");
-            await sendCustomButton(buttons, text, true, "apk", json.dl_link, `${json.app_name}.apk`);
-            return await react("✔️");
-        } else if (input) {
-            const psAPI = await blackamda_API("search", `platform=playstore&name=${input}`, amdiWA.botNumberJid);
-            const response = await axios.get(psAPI);
-            const json = response.data
-
-            if (json.status.error) return await reply("Error".fetchError({ message: json.status.message }), "❌", 1);
-
-            var listInfo = {}
-            listInfo.title = Lang.APK_TITLE
-            listInfo.text = Lang.APK_TXT
-            listInfo.buttonTXT = 'Select app'
-
-            const sections = apkDL_List(prefix, json.data);
-
-            return await sendListMsg(listInfo, sections)
-        }
-    } catch (e) {
-        console.log(e);
-        return await reply("Error".fetchError(e), "❌", 1);
-    }
-}));
+    });
