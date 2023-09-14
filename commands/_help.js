@@ -53,14 +53,13 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `●────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────●\n`
+                let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
                 str +=
                     '```' + `┏━━━━━━━━━━━━━━━✦\n
 ┃ ┌╼╼╼╼╼╼╼╼╼╼●
 ┃ │🧚‍♂️𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴🧚‍♂️
 ┃ ├──────────●
 ┃ ├❍━𝞖𝞢𝙇𝙇𝞗𝙒━❍ ${citel.pushName},
-┃ │❄️𝐈𝐚𝐦 𝐀 𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧❄️
 ┃ ├❍━🍁𝙎𝞠𝞢𝞢𝘿🍁━❍ ${latensie.toFixed(4)}
 ┃ ├❍━🧚‍♂️𝞗𝙒𝞜𝞢𝞒🧚‍♂️━❍ 𝐂𝐇𝐀𝐌𝐎𝐃𝐇
 ┃ ├❍━ 💕𝙐𝞠𝙏𝞘𝞛𝞢 💕━❍${runtime(process.uptime())}
@@ -69,24 +68,19 @@ Secktor.cmd({
 ┗━━━━━━━━━━━━━━━✦\n` + '```'
                 for (const category in cmds) 
                 {
-                   str += `┏━━━━━━━━━━━━━━━✦
-┃ ┌╼╼╼╼╼╼╼╼╼╼●
-┃ │*${tiny(category)}
-┃ ├╼╼╼╼╼╼╼╼╼╼●\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `┏━━━━━━━━━━━━━━━✦
-┃ ┌╼╼╼╼╼╼╼╼╼╼●
-┃ │*${tiny(category)}
-┃ ├╼╼╼╼╼╼╼╼╼╼●\n` ;      
-                        for (const plugins of cmds[category]) { str += `┃ │🧜‍♀️⃝►● ${fancytext(plugins,1)}\n` ; }
-                        str += `┃ └╼╼╼╼╼╼╼╼╼╼╼╼●\n`  ;
+                   str += `╭────❏ *${tiny(category)}* ❏\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `╭─────❏ *${tiny(category)}* ❏\n` ;      
+                        for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
+                        str += `╰━━━━━━━━━━━━━──⊷\n`  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `┃ │🧜‍♀️⃝►● ${fancytext(plugins,1)}\n` ; }
-                         str += `┃ └╼╼╼╼╼╼╼╼╼╼╼╼●\n`  ; 
+                   else { for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
+                         str += `╰━━━━━━━━━━━━━━──⊷\n`  ; 
                    }
   
                 }
-                str+= `┗━━━━━━━━━━━━━━✦ `
+                str+= `🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
+🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭`
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
