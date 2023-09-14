@@ -12,7 +12,7 @@ const long = String.fromCharCode(8206)
 const readmore = long.repeat(4001)
 const Secktor = require('../lib/commands')
 
-cmd({ category: "fmmods", desc: "Fouad-whatsapp mods downloader", category: "download", react: "🧚‍♂️" }, (async (amdiWA) => {
+cmd({ pattern: "fmmods", desc: "Fouad-whatsapp mods downloader", category: "download", react: "🧚‍♂️" }, (async (amdiWA) => {
     let { footerTXT, input, prefix, react, reply, sendDocument, sendListMsg } = amdiWA.msgLayout;
 
     const fmmods = await fmmod_com();
