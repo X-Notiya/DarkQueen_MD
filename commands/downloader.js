@@ -299,7 +299,10 @@ cmd({
             if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
-            citel.reply('💓𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧 𝐨𝐧 𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐢𝐧𝐠 𝐲𝐨𝐮𝐚𝐫𝐞 𝐬𝐨𝐧𝐠💓✦𝐒𝐨𝐧𝐠 𝐧𝐚𝐦𝐞 '+titleYt)
+            citel.reply('🧚‍♂️ＤＡＲＫ ＱＵＥＥＮ ＳＯＮＤ ＤＯＷＮＬＯＤＥＲ🧚‍♂️
+➥𝚅𝙸𝙴𝚆𝚂 ${i.views}\n
+➥𝙻𝙰𝚂𝚃 𝚄𝙿𝙻𝙾𝙳 𝙳𝙰𝚈 ${i.ago}\n
+➥𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 '+titleYt)
             const stream = ytdl(anu.url, {
                     filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
                 })
@@ -322,7 +325,7 @@ cmd({
                         externalAdReply: {
                             title: titleYt,
                             body: citel.pushName,
-                            renderLargerThumbnail: false,
+                            renderLargerThumbnail: true,
                             thumbnailUrl: search.all[0].thumbnail,
                             mediaUrl: text,
                             mediaType: 1,
@@ -334,7 +337,7 @@ cmd({
                 await Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                 return fs.unlinkSync(`./${randomName}`);
             } else {
-                citel.reply(`❌ File size bigger than 100mb.`);
+                citel.reply(`🧜‍♀️ File size bigger than 100mb👋.`);
             }
             fs.unlinkSync(`./${randomName}`);
             
