@@ -1,7 +1,13 @@
 /**
-🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
-🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
-**/
+ Copyright (C) 2022.
+ Licensed under the  GPL-3.0 License;
+ You may not use this file except in compliance with the License.
+ It is supplied in the hope that it may be useful.
+ * @project_name : Secktor-Md
+ * @author : SamPandey001 <https://github.com/SamPandey001>
+ * @description : Secktor,A Multi-functional whatsapp bot.
+ * @version 0.0.6
+ **/
 
 const os = require('os')
 const moment = require("moment-timezone")
@@ -10,7 +16,7 @@ const Config = require('../config')
 let { fancytext, tlang, tiny, runtime, formatp, botpic, prefix, sck1 } = require("../lib");
 const long = String.fromCharCode(8206)
 const readmore = long.repeat(4001)
-const DarkQueen = require('../lib/commands')
+const Secktor = require('../lib/commands')
 
     //---------------------------------------------------------------------------
 Secktor.cmd({
@@ -18,7 +24,7 @@ Secktor.cmd({
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "🦂",
+            react: "✨",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -47,45 +53,40 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `❍━ ` + fancytext(Config.ownername.split(' ')[0], 58) + `━❍\n`
+                let str = `●────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────●\n`
                 str +=
-                    '```' + `┏━━━━━━━━━━━━━━━━✦
-┃ ┌╼╼╼╼╼╼╼╼╼╼╼╼●
-┃ ├👋𝞖𝞘 ${citel.pushName}
-┃ ├ 💓𝐈 𝐚𝐦 𝐚 𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 𝚳𝐃💓
-┃ │ 
-┃ ├❑🥀𝙎𝞠𝞢𝞢𝘿 ${latensie.toFixed(4)} 
-┃ ├❑🎩𝞗𝙒𝞜𝞢𝞒 𝐌𝐫.𝐍𝐨𝐭𝐢𝐲𝐚
-┃ ├❑🧜‍♂️𝙐𝞠𝙏𝞘𝞛𝞢 ${runtime(process.uptime())}
-┃ ├❑🎭𝞗𝙒𝞜𝞢𝞒 𝞜𝞗 _94765837695_
-┃ └╼╼╼╼╼╼╼╼╼╼╼╼●
-┗━━━━━━━━━━━━━━━━━━✦\n
-` + '```'
+                    '```' + `┏━━━━━━━━━━━━━━━✦\n
+┃ ┌╼╼╼╼╼╼╼╼╼╼●
+┃ │🧚‍♂️𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴🧚‍♂️
+┃ ├──────────●
+┃ ├❍━𝞖𝞢𝙇𝙇𝞗𝙒━❍ ${citel.pushName},
+┃ │❄️𝐈𝐚𝐦 𝐀 𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧❄️
+┃ ├❍━🍁𝙎𝞠𝞢𝞢𝘿🍁━❍ ${latensie.toFixed(4)}
+┃ ├❍━🧚‍♂️𝞗𝙒𝞜𝞢𝞒🧚‍♂️━❍ 𝐂𝐇𝐀𝐌𝐎𝐃𝐇
+┃ ├❍━ 💕𝙐𝞠𝙏𝞘𝞛𝞢 💕━❍${runtime(process.uptime())}
+┃ ├❍━🎩𝞗𝙒𝞜𝞢𝞒 𝞜𝞗🎩━❍ 94765837695
+┃ └╼╼╼╼╼╼╼╼╼╼●
+┗━━━━━━━━━━━━━━━✦` + '```'
                 for (const category in cmds) 
                 {
-                   str += `┏━━━━━━━━━━━━━━━━✦
-┃  ╭─────────────◆
-┃  │ 🧚‍♂️${tiny(category)}🧚‍♂️
-┃  ╰┬────────────◆
-┃  ┌┘` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `┏━━━━━━━━━━━✦
-┃  ╭─────────────◆
-┃  │ 🧚‍♂️${tiny(category)}🧚‍♂️
-┃  ╰┬────────────◆
-┃  ┌┘` ;      
-                        for (const plugins of cmds[category]) { str += `┃ ├✦⃝🧜‍♂️►${fancytext(plugins,1)}\n` ; }
-                        str += `┃ ┗━━━━━━━━━━━✦
-┗━━━━━━━━━━━✦\n`  ;
+                   str += `┏━━━━━━━━━━━━━━━✦
+┃ ┌╼╼╼╼╼╼╼╼╼╼●
+┃ │*${tiny(category)}
+┃ ├╼╼╼╼╼╼╼╼╼╼●\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `┏━━━━━━━━━━━━━━━✦
+┃ ┌╼╼╼╼╼╼╼╼╼╼●
+┃ │*${tiny(category)}
+┃ ├╼╼╼╼╼╼╼╼╼╼●\n` ;      
+                        for (const plugins of cmds[category]) { str += `┃ │🧜‍♀️⃝►● ${fancytext(plugins,1)}\n` ; }
+                        str += `┃ └╼╼╼╼╼╼╼╼╼╼╼╼●\n`  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `┃ ├✦⃝🧜‍♂️►${fancytext(plugins,1)}\n` ; }
-                         str += `┃ └╼╼╼╼╼╼╼╼╼╼╼●\n`  ; 
+                   else { for (const plugins of cmds[category]) { str += `┃ │🧜‍♀️⃝►● ${fancytext(plugins,1)}\n` ; }
+                         str += `┃ └╼╼╼╼╼╼╼╼╼╼╼╼●\n`  ; 
                    }
   
                 }
-                str+= `┗━━━━━━━━━━━━━━━━✦
-🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
-🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭 `
+                str+= `┗━━━━━━━━━━━━━━✦ `
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
@@ -131,7 +132,7 @@ Secktor.cmd({
         pattern: "owner",
         desc: "To find owner number",
         category: "general",
-        react: "🥀",
+        react: "💜",
         filename: __filename
     },
     async(Void, citel) => {
