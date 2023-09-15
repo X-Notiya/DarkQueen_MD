@@ -280,41 +280,22 @@ cmd({
         }
     )
     //---------------------------------------------------------------------------
-cmd({
-            pattern: "audio",
-            alias :['song'],
+smd({
+            pattern: "song",
+            alias: ["audio"],
             desc: "Downloads audio from youtube.",
             category: "downloader",
             filename: __filename,
-            use: '<text>',
+            use: '<give text>',
         },
-        async(Void, citel, text) => {
-            let yts = require("secktor-pack");
-            let search = await yts(text);
-            let anu = search.videos[0];
-            const getRandom = (ext) => {
-                return `${Math.floor(Math.random() * 10000)}${ext}`;
-            };
-            let infoYt = await ytdl.getInfo(anu.url);
-            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
-            let titleYt = infoYt.videoDetails.title;
-            let randomName = getRandom(".mp3");
-            citel.reply('🧚‍♂️𝔻𝔸ℝ𝕂 ℚ𝕀𝔼𝔼ℕ 𝕊𝕆ℕ𝔾 𝔻𝕆𝕎ℕ𝕃𝕆𝔻𝔼ℝ🧚‍♂️
-➥ᴠɪᴇᴡꜱ ${i.views}\n
-➥ᴜᴘʟᴏᴀᴅ ᴅᴀʏ${i.ago}\n
-✦𝐒𝐨𝐧𝐠 𝐧𝐚𝐦𝐞 '+titleYt
-
-
-🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
-🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭)
-            const stream = ytdl(anu.url, {
-                    filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
-                })
-                .pipe(fs.createWriteStream(`./${randomName}`));
-            await new Promise((resolve, reject) => {
-                stream.on("error", reject);
-                stream.on("finish", resolve);
-            });
+        async(Suhail, citel, text) => {
+  
+                if (!text) return await citel.reply(`*_Ohh PLease, Give Me Song Name_*`);
+                let yts = require("secktor-pack")
+                let search = await yts(text);
+                let i = search.all[1] ;
+                let cap = "\t🧚‍♂️𝔻𝔸ℝ𝕂 ℚ𝕌𝔼𝔼ℕ 𝕐𝕥 𝔻𝕆𝕎ℕ𝕃𝕆𝔻𝔼ℝ🧚‍♂️  \n\n➥ᴛɪᴛʟᴇ " + i.title + "\n➥ᴜʀʟ " + i.url +"\n➥ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ " + i.timestamp +"\n➥ᴠɪᴇᴡꜱ "+i.views +"\n➥ᴜᴘʟᴏᴀᴅᴇᴅ" +i.ago +"\n➥ᴀᴜᴛʜᴏʀ"+i.author.name+"\n\n\n1.ᴛᴏ ᴠɪᴅᴇᴏ \n2.ᴛᴏ ᴀᴜᴅɪᴏ" ;
+                Suhail.bot.sendMessage(citel.chat,{image :{url : i.thumbnail}, caption :  cap });
 
             let stats = fs.statSync(`./${randomName}`);
             let fileSizeInBytes = stats.size;
