@@ -1,5 +1,5 @@
 {
-               "name": "X-Notiya",
+               "name": "dark-queen",
                "version": "1.0.5",
                "description": "Multi device whatsapp bot by X-Notiya.",
                "main": "lib/client.js",
@@ -54,13 +54,11 @@
                 "got":"12.6.0",
                 "acrcloud": "^1.4.0",
                        "request": "^2.88.2",
-                       "node-fetch": "^2.6.1",
                        "simple-git": "^3.15.1",
-                       "@shineiichijo/marika": "^2.0.3",           
-                       "translatte": "^3.0.1",
-                       "util": "^0.12.4", 
+                       "@shineiichijo/marika": "^2.0.3",
                        "@sl-code-lords/esana-news": "latest",
-                       "aptoide-scraper": "latest",
+                       "translatte": "^3.0.1",
+                       "util": "^0.12.4",           
                        "secktor-pack": "latest",
                        "ytdl-secktor": "^0.0.1-development",
                        "pastebin-js": "latest",
@@ -75,10 +73,10 @@
                     },
                  "repository": {
                  "type": "git",
-                 "url": "git+https://github.com/X-Notiya/-.git"
+                 "url": "git+https://github.com/X-Notiya/DarkQueen_MD.git"
                   },
                  "bugs": {
-                 "url": "https://github.com/X-Notiya/-/issues"
+                 "url": "https://github.com/X-Notiya/DarkQueen_MD/issues"
                   },
-                 "homepage": "https://github.com/X-Notiya/-#readme"
+                 "homepage": "https://github.com/X-Notiya/DarkQueen_MD#readme"
                   }
