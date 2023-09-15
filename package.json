@@ -61,7 +61,8 @@
                        "translatte": "^3.0.1",
                        "util": "^0.12.4",           
                        "secktor-pack": "latest",
-                       "ytdl-secktor": "^0.0.1-development",
+                       "ytdl-secktor": "latest",    
+                       "ytdl-secktor": "^0.0.1-development", 
                        "pastebin-js": "latest",
                        "wa-sticker-formatter": "^4.3.2"
                       },
