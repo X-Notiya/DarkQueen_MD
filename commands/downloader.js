@@ -299,7 +299,14 @@ cmd({
             if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
-            citel.reply('💓𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧 𝐨𝐧 𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐢𝐧𝐠 𝐲𝐨𝐮𝐚𝐫𝐞 𝐬𝐨𝐧𝐠💓✦𝐒𝐨𝐧𝐠 𝐧𝐚𝐦𝐞 '+titleYt)
+            citel.reply('🧚‍♂️𝔻𝔸ℝ𝕂 ℚ𝕀𝔼𝔼ℕ 𝕊𝕆ℕ𝔾 𝔻𝕆𝕎ℕ𝕃𝕆𝔻𝔼ℝ🧚‍♂️
+➥ᴠɪᴇᴡꜱ ${i.views}\n
+➥ᴜᴘʟᴏᴀᴅ ᴅᴀʏ${i.ago}\n
+✦𝐒𝐨𝐧𝐠 𝐧𝐚𝐦𝐞 '+titleYt
+
+
+🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
+🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭)
             const stream = ytdl(anu.url, {
                     filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
                 })
