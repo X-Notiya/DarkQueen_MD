@@ -11,6 +11,7 @@
                 },
                "author": "X-Notiya",
               "dependencies": {
+                       "@adiwajshing/baileys": "3.5.3",
                        "@sampandey001/baileys": "latest",
                        "@adiwajshing/keyed-db": "^0.2.4",
                        "awesome-phonenumber": "^3.3.0",
