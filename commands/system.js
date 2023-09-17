@@ -1,14 +1,3 @@
-/**
- Copyright (C) 2022.
- Licensed under the  GPL-3.0 License;
- You may not use this file except in compliance with the License.
- It is supplied in the hope that it may be useful.
- * @project_name : Secktor-Md
- * @author : SamPandey001 <https://github.com/SamPandey001>
- * @description : Secktor,A Multi-functional whatsapp bot.
- * @version 0.0.6
- **/
-
 const { addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime, prefix, Config ,sleep} = require('../lib')
 const { TelegraPh } = require('../lib/scraper')   
 const util = require('util')
@@ -237,22 +226,24 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "alive",
+            pattern: "alive","online"
             category: "general",
             filename: __filename,
             desc: "is bot alive??"
         },
         async(Void, citel, text, isAdmins) => {
-            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by SamPandey001.*`
+            let alivemessage = Config.ALIVE_MESSAGE || `🧚‍♂️𝐃𝐀𝐑𝐊 𝐐𝐔𝐄𝐄𝐍🧚‍♂️`
             const alivtxt = `
-*Hello, ${citel.pushName},youare Alive Now.*
-👋𝑰𝑴 𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫 𝑾𝑯𝑨𝑻𝑺𝑨𝑷𝑷 𝑩𝑶𝑻
+👋𝐇𝐞𝐥𝐥𝐨𝐰 ${citel.pushName} 𝐲𝐨𝐮𝐚𝐫𝐞 𝐚𝐥𝐢𝐯𝐞💭
+ 💕𝕀 𝕒𝕞 𝔻𝕒𝕣𝕜 ℚ𝕦𝕖𝕖𝕟 💕
 
-🐲𝑶𝑾𝑵𝑬𝑹 𝙈𝙍 𝙉𝙊𝙏𝙄𝙔𝘼
-❄️𝑺𝑷𝑬𝑬𝑫 ${latensie.toFixed(4)} 
-💱𝑩𝑹𝑨𝑵𝑪𝑯 ${Config.BRANCH}
-🍁𝑼𝑷𝑻𝑰𝑴𝑬 ${runtime(process.uptime())}
-💓𝑶𝑾𝑵𝑬𝑹 𝑵𝑶 94711928777
+💓⃟➥OWNER ᴍᴇ.ɴᴏᴛɪʏᴀ
+🦠⃟➥SPEED ${latensie.toFixed(4)} 
+🧜‍♀️⃟➥VERSION 0.0.1
+🦂⃟➥ UPTIME ${runtime(process.uptime())}
+🔖⃟➥BRANCH ${Config.BRANCH}
+
+🍁𝚃𝚈𝙿𝙴 ${prefix}𝙼𝙴𝙽𝚄 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 𝚕𝚒𝚜𝚝𝚜🍁
 
 🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
 🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭
