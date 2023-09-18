@@ -105,7 +105,7 @@ cmd({
                 if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
                 let titleYt = infoYt.videoDetails.title;
                 let randomName = getRandom(".mp4");
-                citel.reply('*Downloadig:* '+titleYt)
+                citel.reply('*Downloadig:* '+titleYt)'
                 const stream = ytdl(urlYt, {
                         filter: (info) => info.itag == 22 || info.itag == 18,
                     })
@@ -285,6 +285,7 @@ cmd({
             alias :['song'],
             desc: "Downloads audio from youtube.",
             category: "downloader",
+            react: '🎶','🎧',
             filename: __filename,
             use: '<text>',
         },
@@ -299,16 +300,20 @@ cmd({
             if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`වීඩියෝව විශාල නිසා මට බාගත කිරීමට නොහැක......!`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
-            citel.reply(`❍━❲*_🧚‍♂️DARK QUEEN MD-V1🧚‍♂️_*❳━❍
-🎧𝐒𝐎𝐍𝐃 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐄𝐑🎧
-🍁⃟➥𝕍𝕀𝔼𝕎𝕊 ${anu.views}
-🦠⃟➥𝕌ℙ𝕃𝕆𝔻𝔼ℝ 𝔻𝔸𝕐 ${anu.ago}
-🐉⃟➥𝔸𝕌𝕋ℍ𝕆ℝ ${anu.author.name}
-💓⃟➥𝔻𝕌ℝ𝔸𝕋𝕀𝕆ℕ ${anu.timestamp}
-💦⃟➥𝕊𝕀ℤ𝔼 ${anu.size}
-
-🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
-🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭`)
+            let buttonMessage = {
+                image: {
+                    url: anu.thumbnail,
+                },
+            citel.reply(`●━❲*_🧚‍♂️DARK QUEEN MD-V1🧚‍♂️_*❳━❋
+┃🎧𝐒𝐎𝐍𝐃 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐄𝐑🎧
+┣🍁⃟➥𝕍𝕀𝔼𝕎𝕊 ${anu.views}
+┣🦠⃟➥𝕌ℙ𝕃𝕆𝔻𝔼ℝ 𝔻𝔸𝕐 ${anu.ago}
+┣🐉⃟➥𝔸𝕌𝕋ℍ𝕆ℝ ${anu.author.name}
+┣💓⃟➥𝔻𝕌ℝ𝔸𝕋𝕀𝕆ℕ ${anu.timestamp}
+┃
+┃🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
+┃🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭
+┗━━━━━━━━━━━━━━━❋`)
             const stream = ytdl(anu.url, {
                     filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
                 })
@@ -330,9 +335,9 @@ cmd({
                     contextInfo: {
                         externalAdReply: {
                             title: titleYt,
-                            body: '𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧 𝐌𝐃 𝐕1',
+                            body: 'ᴅᴀʀᴋ Qᴜᴇᴇɴ ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴅᴇʀ',
                             renderLargerThumbnail: false,
-                            thumbnailUrl: search.all[0].thumbnail,
+                            thumbnailUrl: 'https://telegra.ph/file/3580e4bfbc324e93918ad.jpg',
                             mediaUrl: text,
                             mediaType: 1,
                             thumbnail: await getBuffer(search.all[0].thumbnail),
@@ -395,7 +400,7 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: ` 💓⃟➥Title : ${titleYt}\n🐉⃟➥File Size : ${fileSizeInMegabytes} MB`,
+                        caption: ` ⿻ Title : ${titleYt}\n ⿻ File Size : ${fileSizeInMegabytes} MB`,
                         headerType: 4,
                         contextInfo: {
                             externalAdReply: {
