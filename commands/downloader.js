@@ -1,6 +1,12 @@
 /**
- 🎭𝑫𝑨𝑹𝑲 𝑸𝑼𝑬𝑬𝑵 𝑴𝑫🎭
-🎩𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑪𝑯𝑨𝑴𝑶𝑫𝑯🎩
+ Copyright (C) 2022.
+ Licensed under the  GPL-3.0 License;
+ You may not use this file except in compliance with the License.
+ It is supplied in the hope that it may be useful.
+ * @project_name : Secktor-Md
+ * @author : SamPandey001 <https://github.com/SamPandey001>
+ * @description : Secktor,A Multi-functional whatsapp bot.
+ * @version 0.0.6
  **/
 
 const { tlang, ringtone, cmd,fetchJson, sleep, botpic,ffmpeg, getBuffer, pinterest, prefix, Config } = require('../lib')
@@ -105,7 +111,7 @@ cmd({
                 if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
                 let titleYt = infoYt.videoDetails.title;
                 let randomName = getRandom(".mp4");
-                citel.reply('*Downloadig:* '+titleYt)'
+                citel.reply('*Downloadig:* '+titleYt)
                 const stream = ytdl(urlYt, {
                         filter: (info) => info.itag == 22 || info.itag == 18,
                     })
@@ -173,8 +179,6 @@ cmd({
 │⿻ *Viewers:* ${anu.views}
 │⿻ *Uploaded:* ${anu.ago}
 │⿻ *Author:* ${anu.author.name}
-│🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
-│🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭
 ╰────────────────◆
 ⦿ *Url* : ${anu.url}
 `,
@@ -262,9 +266,7 @@ cmd({
 *Nᴀᴍᴇ* : ${baby1[0].nama}
 *Sɪᴢᴇ* : ${baby1[0].size}
 *Mɪᴍᴇ* : ${baby1[0].mime}
-*Lɪɴᴋ* : ${baby1[0].link}
-🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
-🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭`;
+*Lɪɴᴋ* : ${baby1[0].link}`;
             reply(`${result4}`);
             return Void.sendMessage(citel.chat, {
                     document: {
@@ -285,7 +287,6 @@ cmd({
             alias :['song'],
             desc: "Downloads audio from youtube.",
             category: "downloader",
-            react: '🎶','🎧',
             filename: __filename,
             use: '<text>',
         },
@@ -297,19 +298,16 @@ cmd({
                 return `${Math.floor(Math.random() * 10000)}${ext}`;
             };
             let infoYt = await ytdl.getInfo(anu.url);
-            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`වීඩියෝව විශාල නිසා මට බාගත කිරීමට නොහැක......!`);
+            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
-            let buttonMessage = {
-                image: {
-                    url: anu.thumbnail,
-                },
             citel.reply(`●━❲*_🧚‍♂️DARK QUEEN MD-V1🧚‍♂️_*❳━❋
 ┃🎧𝐒𝐎𝐍𝐃 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐄𝐑🎧
 ┣🍁⃟➥𝕍𝕀𝔼𝕎𝕊 ${anu.views}
 ┣🦠⃟➥𝕌ℙ𝕃𝕆𝔻𝔼ℝ 𝔻𝔸𝕐 ${anu.ago}
 ┣🐉⃟➥𝔸𝕌𝕋ℍ𝕆ℝ ${anu.author.name}
 ┣💓⃟➥𝔻𝕌ℝ𝔸𝕋𝕀𝕆ℕ ${anu.timestamp}
+┣💦⃟➥𝕊𝕀ℤ𝔼 ${anu.size}
 ┃
 ┃🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
 ┃🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭
@@ -335,10 +333,10 @@ cmd({
                     contextInfo: {
                         externalAdReply: {
                             title: titleYt,
-                            body: 'ᴅᴀʀᴋ Qᴜᴇᴇɴ ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴅᴇʀ',
-                            renderLargerThumbnail: false,
-                            thumbnailUrl: 'https://telegra.ph/file/3580e4bfbc324e93918ad.jpg',
-                            mediaUrl: text,
+                            body: '💓ᴅᴀʀᴋQᴜᴇᴇɴ•ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ💓',
+                            renderLargerThumbnail: true,
+                            thumbnailUrl: 'https://telegra.ph/file/2410f13a9a02224c996af.jpg',
+                            mediaUrl: 'wa.me/+94715491788?text=Hi...💓',
                             mediaType: 1,
                             thumbnail: await getBuffer(search.all[0].thumbnail),
                             sourceUrl: text,
