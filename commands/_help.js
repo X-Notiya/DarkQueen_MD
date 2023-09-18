@@ -57,11 +57,11 @@ Secktor.cmd({
                 {
                    str += `┏━━━━━━━━━━━━━━━✦
 ┃ ┌╼╼╼╼╼╼╼╼╼╼●
-┃ │ ${tiny(category)}
+┃ │ ●❮⃟🧚‍♂️${tiny(category)}🧚‍♂️⃟❯●
 ┃ ├╼╼╼╼╼╼╼╼╼╼●\n` ;
                    if(text.toLowerCase() == category.toLowerCase()){ str = `┏━━━━━━━━━━━━━━━✦
 ┃ ┌╼╼╼╼╼╼╼╼╼╼●
-┃ │ ${tiny(category)}
+┃ │ ●❮⃟🧚‍♂️${tiny(category)}🧚‍♂️⃟❯●
 ┃ ├╼╼╼╼╼╼╼╼╼╼●\n` ;      
                         for (const plugins of cmds[category]) { str += `┃ ├🧜‍♀️⃟➤ ${fancytext(plugins,1)}\n` ; }
                         str += `┃ └╼╼╼╼╼╼╼╼╼╼●\n`  ;
@@ -75,25 +75,14 @@ Secktor.cmd({
                 str+= `┗━━━━━━━━━━━━━━✦
 🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
 🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭 `
-        let buttonMessaged = {
-            image: { url: await botpic() },
-            caption: cap,
-            footer: tlang().footer,
-            headerType: 4,
-            contextInfo: {
-                externalAdReply: {
-                    title: "𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧 𝐌𝐃",
-                    body: "ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ",
-                    thumbnail: log0,
-                    mediaType: 4,
-                    mediaUrl: '',
-                    sourceUrl: ``,
-                },
-            },
-        };
-        return await Void.sendMessage(citel.chat, buttonMessaged, {
-            quoted: citel,
-        });
+                let buttonMessaged = {
+                    image: { url: await botpic() },
+                    caption: str
+                };
+                return await Void.sendMessage(citel.chat, buttonMessaged);
+            }
+        }
+    )
     //---------------------------------------------------------------------------
 Secktor.cmd({
             pattern: "list",
