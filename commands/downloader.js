@@ -296,10 +296,19 @@ cmd({
                 return `${Math.floor(Math.random() * 10000)}${ext}`;
             };
             let infoYt = await ytdl.getInfo(anu.url);
-            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
+            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`වීඩියෝව විශාල නිසා මට බාගත කිරීමට නොහැක......!`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
-            citel.reply('💓𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧 𝐨𝐧 𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐢𝐧𝐠 𝐲𝐨𝐮𝐚𝐫𝐞 𝐬𝐨𝐧𝐠💓✦𝐒𝐨𝐧𝐠 𝐧𝐚𝐦𝐞 '+titleYt)
+            citel.reply(`❍━❲*_🧚‍♂️DARK QUEEN MD-V1🧚‍♂️_*❳━❍
+🎧𝐒𝐎𝐍𝐃 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐄𝐑🎧
+🍁⃟➥𝕍𝕀𝔼𝕎𝕊 ${anu.views}
+🦠⃟➥𝕌ℙ𝕃𝕆𝔻𝔼ℝ 𝔻𝔸𝕐 ${anu.ago}
+🐉⃟➥𝔸𝕌𝕋ℍ𝕆ℝ ${anu.author.name}
+💓⃟➥𝔻𝕌ℝ𝔸𝕋𝕀𝕆ℕ ${anu.timestamp}
+💦⃟➥𝕊𝕀ℤ𝔼 ${anu.size}
+
+🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
+🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭`)
             const stream = ytdl(anu.url, {
                     filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
                 })
@@ -321,7 +330,7 @@ cmd({
                     contextInfo: {
                         externalAdReply: {
                             title: titleYt,
-                            body: citel.pushName,
+                            body: '𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧 𝐌𝐃 𝐕1',
                             renderLargerThumbnail: false,
                             thumbnailUrl: search.all[0].thumbnail,
                             mediaUrl: text,
@@ -386,7 +395,7 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: ` ⿻ Title : ${titleYt}\n ⿻ File Size : ${fileSizeInMegabytes} MB`,
+                        caption: ` 💓⃟➥Title : ${titleYt}\n🐉⃟➥File Size : ${fileSizeInMegabytes} MB`,
                         headerType: 4,
                         contextInfo: {
                             externalAdReply: {
