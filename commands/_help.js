@@ -75,14 +75,25 @@ Secktor.cmd({
                 str+= `┗━━━━━━━━━━━━━━✦
 🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
 🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭 `
-                let buttonMessaged = {
-                    image: { url: await botpic() },
-                    caption: str
-                };
-                return await Void.sendMessage(citel.chat, buttonMessaged);
-            }
-        }
-    )
+        let buttonMessaged = {
+            image: { url: await botpic() },
+            caption: cap,
+            footer: tlang().footer,
+            headerType: 4,
+            contextInfo: {
+                externalAdReply: {
+                    title: "𝐃𝐚𝐫𝐤 𝐐𝐮𝐞𝐞𝐧 𝐌𝐃",
+                    body: "ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ",
+                    thumbnail: log0,
+                    mediaType: 4,
+                    mediaUrl: '',
+                    sourceUrl: ``,
+                },
+            },
+        };
+        return await Void.sendMessage(citel.chat, buttonMessaged, {
+            quoted: citel,
+        });
     //---------------------------------------------------------------------------
 Secktor.cmd({
             pattern: "list",
