@@ -111,7 +111,17 @@ cmd({
                 if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
                 let titleYt = infoYt.videoDetails.title;
                 let randomName = getRandom(".mp4");
-                citel.reply('*Downloadig:* '+titleYt)
+                citel.reply(`┏━❲ *_🧚‍♂️DARK QUEEN MD-V1🧚‍♂️_*❳━✳
+┃📽️VIDEO DOWNLODER📽️
+┃
+┃🎶⃟➥VIEWS ${anu.views}
+┃🐉⃟➥LAST UPLODE ${anu.ago}
+┃🔖⃟➥AUTHOR ${anu.author.name}
+┃🍁⃟➥DURATION ${anu.timetamp}
+┃
+┃🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
+┃🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭
+┗━━━━━━━━━━━━━━━━✳`)
                 const stream = ytdl(urlYt, {
                         filter: (info) => info.itag == 22 || info.itag == 18,
                     })
@@ -129,7 +139,8 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: ` ⿻ Title : ${titleYt}\n ⿻ File Size : ${fileSizeInMegabytes} MB`,
+                        caption: `🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
+🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭`,
                         headerType: 4,
                         contextInfo: {
                             externalAdReply: {
@@ -284,9 +295,10 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "audio",
+            react: "🎶",
             alias :['song'],
             desc: "Downloads audio from youtube.",
-            category: "downloader",
+            category: "downloder",
             filename: __filename,
             use: '<text>',
         },
@@ -334,7 +346,7 @@ cmd({
                         externalAdReply: {
                             title: titleYt,
                             body: '💓ᴅᴀʀᴋQᴜᴇᴇɴ•ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ💓',
-                            renderLargerThumbnail: true,
+                            renderLargerThumbnail: false,
                             thumbnailUrl: 'https://telegra.ph/file/2410f13a9a02224c996af.jpg',
                             mediaUrl: 'wa.me/+94715491788?text=Hi...💓',
                             mediaType: 1,
