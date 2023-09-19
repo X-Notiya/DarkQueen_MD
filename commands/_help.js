@@ -84,39 +84,35 @@ Secktor.cmd({
         }
     )
     //---------------------------------------------------------------------------
-Secktor.cmd({
-            pattern: "list",
-            desc: "list menu",
-            category: "general"
-        },
-        async(Void, citel) => {
-            const { commands } = require('../lib');
-            let str = `
-╭━━〘 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 〙━━──⊷`
-            str += `
-┃ ⛥╭──────────────      
-┃ ⛥│ User: ${citel.pushName}
-┃ ⛥│ Theme: ${tlang().title}
-┃ ⛥│ Prefix: ${prefix}
-┃ ⛥│ Owner: ${Config.ownername}
-┃ ⛥│ Commands: ${commands.length}
-┃ ⛥│ Uptime: ${runtime(process.uptime())}
-┃ ⛥│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃ ⛥│  
-┃ ⛥╰───────────
-╰━━━━━━━━━━━──⊷\n`
-for (let i = 0; i < commands.length; i++) 
-{
-     if(commands[i].pattern==undefined) continue
-     str +=       `╭ ${i+1} *${fancytext(commands[i].pattern,1)}*\n` 
-     if(commands[i].desc=undefined) commands[i].desc=""
-     str += `╰➛ ${fancytext(commands[i].desc,1)}\n`
-}
-            return await Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: str })
-        }
-    )
-    //---------------------------------------------------------------------------
-Secktor.cmd({
+DarkQueen.cmd({
+              pattern: "list",
+              desc: "list menu",
+              category: "general",
+              react: "🥀"
+           },
+          async(Suhail, msg , text ) => {
+            
+              const { commands } = require('../lib');
+              text = `
+  ╭━━〘 *${Config.botname}* 〙────⊷     
+  ┃ ✭ Theme: ${tlang().title}
+  ┃ ✭ Prefix: ${prefix}
+  ┃ ✭ Owner: ${Config.ownername}
+  ┃ ✭ Commands: ${commands.length}
+  ┃ ✭ Uptime: ${runtime(process.uptime())}
+  ┃ ✭ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+  ╰━━━━━━━━━━━━━━⊷\n`
+  text = '';
+              for (let i = 0; i < commands.length; i++){if(commands[i].pattern==undefined){ continue; }else { text += `*${i+1} ${fancytext(commands[i].pattern,1)}*\n  ${fancytext(commands[i].desc,1)}\n`}}
+  
+              
+   
+   //str += `╰━━━━━━━━━━━───⊷\nsᴜʜᴀɪʟ ᴛᴇᴄʜ ɪɴғᴏ \n www.youtube.com/c/SuhailTechInfo`
+             try{ return await msg.sendMessage(msg.chat, { image: { url: THUMB_IMAGE }, caption: text + Config.caption}); }catch{return await send(citel,str,{},"",citel);}
+          }
+      )
+      //---------------------------------------------------------------------------
+DarkQueen.cmd({
         pattern: "owner",
         desc: "To find owner number",
         category: "general",
@@ -135,11 +131,11 @@ Secktor.cmd({
             contacts: { displayName: Config.ownername, contacts: [{ vcard }] },
             contextInfo: {
                 externalAdReply: {
-                    title: Config.ownername,
-                    body: 'Touch here.',
+                    title: '🧚‍♂️_DARK QUEEN MD_🧚‍♂️,
+                    body: '💓ᴅᴀʀᴋQᴜᴇᴇɴ•ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ💓',
                     renderLargerThumbnail: true,
-                    thumbnailUrl: ``,
-                    thumbnail: log0,
+                    thumbnailUrl: 'https://telegra.ph/file/3580e4bfbc324e93918ad.jpg',
+                    thumbnail: 'https://telegra.ph/file/3580e4bfbc324e93918ad.jpg'
                     mediaType: 2,
                     mediaUrl: '',
                     sourceUrl: `https://wa.me/+` + owner[0] + '?text=Hii bro,I am ' + citel.pushName,
@@ -153,7 +149,7 @@ Secktor.cmd({
     }
 )
 
-Secktor.cmd({
+DarkQueen.cmd({
     pattern: "file",
     desc: "to get extact name where that command is in repo.\nSo user can edit that.",
     category: "general",
