@@ -131,11 +131,11 @@ DarkQueen.cmd({
             contacts: { displayName: Config.ownername, contacts: [{ vcard }] },
             contextInfo: {
                 externalAdReply: {
-                    title: '🧚‍♂️_DARK QUEEN MD_🧚‍♂️,
+                    title: '🧚‍♂️_DARK QUEEN MD_🧚‍♂️',
                     body: '💓ᴅᴀʀᴋQᴜᴇᴇɴ•ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ💓',
                     renderLargerThumbnail: true,
                     thumbnailUrl: 'https://telegra.ph/file/3580e4bfbc324e93918ad.jpg',
-                    thumbnail: 'https://telegra.ph/file/3580e4bfbc324e93918ad.jpg'
+                    thumbnail: 'https://telegra.ph/file/3580e4bfbc324e93918ad.jpg',
                     mediaType: 2,
                     mediaUrl: '',
                     sourceUrl: `https://wa.me/+` + owner[0] + '?text=Hii bro,I am ' + citel.pushName,
