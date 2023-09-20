@@ -111,7 +111,7 @@ cmd({
                 if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
                 let titleYt = infoYt.videoDetails.title;
                 let randomName = getRandom(".mp4");
-                citel.reply(`┏━❲ *_🧚‍♂️DARK QUEEN MD-V1🧚‍♂️_*❳━✳
+                citel.reply(`┏━❲ *_🧚‍♂️DARK QUEEN MD-V1🧚‍♂️_*❳━❋
 ┃📽️VIDEO DOWNLODER📽️
 ┃
 ┃🎶⃟➥VIEWS ${anu.views}
@@ -121,7 +121,7 @@ cmd({
 ┃
 ┃🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
 ┃🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭
-┗━━━━━━━━━━━━━━━━✳`)
+┗━━━━━━━━━━━━━━━━❋`)
                 const stream = ytdl(urlYt, {
                         filter: (info) => info.itag == 22 || info.itag == 18,
                     })
@@ -344,10 +344,10 @@ cmd({
                     headerType: 4,
                     contextInfo: {
                         externalAdReply: {
-                            title: titleYt,
+                            title: '*_DARK QUEEN MD-V1_*
                             body: '💓ᴅᴀʀᴋQᴜᴇᴇɴ•ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ💓',
                             renderLargerThumbnail: false,
-                            thumbnailUrl: 'https://telegra.ph/file/2410f13a9a02224c996af.jpg',
+                            thumbnailUrl: 'https://telegra.ph/file/3580e4bfbc324e93918ad.jpg',
                             mediaUrl: 'wa.me/+94715491788?text=Hi...💓',
                             mediaType: 1,
                             thumbnail: await getBuffer(search.all[0].thumbnail),
