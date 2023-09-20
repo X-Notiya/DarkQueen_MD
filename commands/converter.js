@@ -1,1 +1,330 @@
-function _0xfa72(){const _0x29911c=['attp','#000000','mtype','reply','*Uhh\x20Please,\x20Reply\x20To\x20A\x20video\x20Message*','log','<url>','circle','20ahJEHz','139768cqexuW','<query>','```Uhh,Please\x20reply\x20to\x20any\x20image\x20or\x20video```','CROPPED','stickerMessage','unlink','File\x20Not\x20Deleted\x20from\x20From\x20TOAUDIO\x20AT\x20:\x20','Fancy\x20text\x20generator\x0a\x0a*_______________________________*\x0a*Example:\x20.fancy\x2032\x20SONIC-MD*\x0a*_______________________________*\x0a\x0a','data','Flips\x20given\x20text.','name','*Damn...\x20Reply\x20To\x20An\x20Animated\x20Sticker\x20or\x20Gif\x20*','toMp4','_Reply\x20to\x20Any\x20Video_','Quot\x20Entered','2184tLbjNl','<text>','705BtmHSj','imageMessage','forEach','videoMessage','sendMessage','audio/mpeg','<reply\x20to\x20any\x20Video>','3613640otKSyu','Error\x20While\x20Deleting\x20Tomp4\x20File\x20:\x20\x20','photo','File\x20deleted\x20successfully\x20in\x20TOPHOTO\x20\x20at\x20:\x20','png','misc','roundsticker','length','3747960MpFAEb','sender','Write\x20text\x20on\x20quoted\x20image.','&apikey=with_love_souravkl11','csticker','send','../lib/exif.js','converter','fs-extra','56\x20Secktor','round','Makes\x20sticker\x20of\x20replied\x20image/video.','viewOnceMessage','Makes\x20Sticker\x20of\x20quoted\x20text.','https://api.memegen.link/images/custom/','floor','12345','toaudio','<reply\x20to\x20any\x20gif>','memegen','\x0a\x20while\x20Error\x20:\x20','packname','transparent','result','author','*Reply\x20To\x20any\x20Image\x20or\x20video\x20Sir.*','split','159173IhtqTg','image','Please\x20quote/reply\x20to\x20any\x20message','roundstic','tiny','File\x20deleted\x20successfully\x20in\x20TOAUDIO\x20MP3\x20at\x20:\x20','*🛡️Your\x20Shortened\x20URL*\x0a\x0a','readFileSync','unlinkSync','5790FzEowF','*Uhh,Please\x20reply\x20to\x20any\x20image*','download','contextInfo','ffmpeg\x20-i\x20','CIRCLE','viewonce','toBuffer','ROUNDED','<reply\x20to\x20any\x20image/video.>','tovideo','viewOnceMessageV2','quotedMessage','sticker','message','120qQVqSP','.png?background=','Secktor','#FFFFFF','https://tinyurl.com/api-create.php?url=','circlesticker','wa-sticker-formatter','quotely','*Your\x20Request\x20Not\x20Be\x20Proceed\x20due\x20to\x20Error.*\x20\x20\x0a*_Error\x20:_*\x20','child_process','../lib','chat','18997mSkGNh','random','test','base64','_Reply\x20to\x20Any\x20Sticker._','4FytSoV','FULL','quote','caption','startsWith','error','downloadAndSaveMediaMessage','audioMessage','quoted','mimetype','213657JGDbFD','retrive','*Uhh\x20Dear,\x20Reply\x20To\x20Animated\x20Sticker\x20or\x20Gif*','*Uhh\x20Please,\x20Reply\x20to\x20Photo\x20Only.*','.png','changes\x20type\x20to\x20audio.','Makes\x20stylish/fancy\x20given\x20text','../lib/','circlestic'];_0xfa72=function(){return _0x29911c;};return _0xfa72();}const _0x4d47c0=_0x308c;(function(_0x10c3d3,_0x43d762){const _0x47375c=_0x308c,_0xcfadc7=_0x10c3d3();while(!![]){try{const _0x3d50b3=parseInt(_0x47375c(0x18f))/0x1*(-parseInt(_0x47375c(0x173))/0x2)+-parseInt(_0x47375c(0x17d))/0x3*(parseInt(_0x47375c(0x18e))/0x4)+parseInt(_0x47375c(0x1a0))/0x5*(parseInt(_0x47375c(0x153))/0x6)+parseInt(_0x47375c(0x14a))/0x7*(parseInt(_0x47375c(0x162))/0x8)+parseInt(_0x47375c(0x1af))/0x9+-parseInt(_0x47375c(0x1a7))/0xa+-parseInt(_0x47375c(0x16e))/0xb*(-parseInt(_0x47375c(0x19e))/0xc);if(_0x3d50b3===_0x43d762)break;else _0xcfadc7['push'](_0xcfadc7['shift']());}catch(_0x526002){_0xcfadc7['push'](_0xcfadc7['shift']());}}}(_0xfa72,0x337dd));const axios=require('axios'),{sck1,tiny,fancytext,getBuffer,listall,cmd,TelegraPh,Config}=require(_0x4d47c0(0x184)),fs=require(_0x4d47c0(0x1b7)),{exec}=require(_0x4d47c0(0x16b)),{Sticker,createSticker,StickerTypes}=require(_0x4d47c0(0x168));function _0x308c(_0x48b895,_0x3c0405){const _0xfa72a5=_0xfa72();return _0x308c=function(_0x308c88,_0x51597b){_0x308c88=_0x308c88-0x13d;let _0x56f4f9=_0xfa72a5[_0x308c88];return _0x56f4f9;},_0x308c(_0x48b895,_0x3c0405);}cmd({'pattern':_0x4d47c0(0x1a9),'desc':'Makes\x20photo\x20of\x20replied\x20sticker.','category':'converter','use':_0x4d47c0(0x141),'filename':__filename},async(_0x57338c,_0x2f5694,_0x140c21)=>{const _0x100aa1=_0x4d47c0,_0x534eb1=_0xe4eba1=>{const _0x4ec050=_0x308c;return''+Math[_0x4ec050(0x13e)](Math[_0x4ec050(0x16f)]()*0x2710)+_0xe4eba1;};if(!_0x2f5694[_0x100aa1(0x17b)])return _0x2f5694[_0x100aa1(0x189)](_0x100aa1(0x172));let _0x162540=_0x2f5694['quoted']['mtype'];if(_0x162540=='imageMessage'||_0x162540==_0x100aa1(0x193)){let _0x2a9a1a=await _0x57338c[_0x100aa1(0x179)](_0x2f5694['quoted']),_0x307ca5=await _0x534eb1(_0x100aa1(0x181));exec(_0x100aa1(0x157)+_0x2a9a1a+'\x20'+_0x307ca5,_0x6ef9cf=>{const _0x420f3b=_0x100aa1;let _0x269e0d=fs[_0x420f3b(0x151)](_0x2a9a1a);_0x57338c[_0x420f3b(0x1a4)](_0x2f5694[_0x420f3b(0x16d)],{'image':_0x269e0d},{'quoted':_0x2f5694}),fs[_0x420f3b(0x194)](_0x2a9a1a,_0x450cdd=>{const _0x21dfdb=_0x420f3b;if(_0x450cdd)return console['error']('File\x20Not\x20Deleted\x20from\x20From\x20TOPHOTO\x20AT\x20:\x20',_0x2a9a1a,_0x21dfdb(0x143),_0x450cdd);else return console['log'](_0x21dfdb(0x1aa),_0x2a9a1a);});});}else return _0x2f5694[_0x100aa1(0x189)]('```Uhh\x20Please,\x20Reply\x20To\x20A\x20Non\x20Animated\x20Sticker```');}),cmd({'pattern':'vv','alias':[_0x4d47c0(0x159),_0x4d47c0(0x17e)],'desc':_0x4d47c0(0x198),'category':_0x4d47c0(0x1ac),'use':_0x4d47c0(0x190),'filename':__filename},async(_0x260c83,_0x1ea0fc,_0x698772)=>{const _0x304033=_0x4d47c0;try{const _0x5c0c90=_0x1ea0fc['msg'][_0x304033(0x156)][_0x304033(0x15f)][_0x304033(0x15e)];if(_0x5c0c90){if(_0x5c0c90[_0x304033(0x161)]['imageMessage']){console['log'](_0x304033(0x19d));let _0x26b45b=_0x5c0c90[_0x304033(0x161)][_0x304033(0x1a1)][_0x304033(0x176)],_0x28b010=await _0x260c83[_0x304033(0x179)](_0x5c0c90['message'][_0x304033(0x1a1)]);return _0x260c83['sendMessage'](_0x1ea0fc[_0x304033(0x16d)],{'image':{'url':_0x28b010},'caption':_0x26b45b});}if(_0x5c0c90['message'][_0x304033(0x1a3)]){let _0x367d35=_0x5c0c90['message'][_0x304033(0x1a3)][_0x304033(0x176)],_0x174e86=await _0x260c83['downloadAndSaveMediaMessage'](_0x5c0c90[_0x304033(0x161)][_0x304033(0x1a3)]);return _0x260c83[_0x304033(0x1a4)](_0x1ea0fc[_0x304033(0x16d)],{'video':{'url':_0x174e86},'caption':_0x367d35});}}}catch(_0x112480){console['log'](_0x304033(0x178),_0x112480);}if(!_0x1ea0fc[_0x304033(0x17b)])return _0x1ea0fc[_0x304033(0x189)]('```Uh\x20Please\x20Reply\x20A\x20ViewOnce\x20Message```');if(_0x1ea0fc[_0x304033(0x17b)]['mtype']===_0x304033(0x1bb)){console['log']('ViewOnce\x20Entered');if(_0x1ea0fc[_0x304033(0x17b)][_0x304033(0x161)][_0x304033(0x1a1)]){let _0x1f42cc=_0x1ea0fc['quoted'][_0x304033(0x161)]['imageMessage'][_0x304033(0x176)],_0x423015=await _0x260c83[_0x304033(0x179)](_0x1ea0fc[_0x304033(0x17b)][_0x304033(0x161)][_0x304033(0x1a1)]);_0x260c83[_0x304033(0x1a4)](_0x1ea0fc[_0x304033(0x16d)],{'image':{'url':_0x423015},'caption':_0x1f42cc});}else{if(_0x1ea0fc['quoted'][_0x304033(0x161)][_0x304033(0x1a3)]){let _0x3ba70f=_0x1ea0fc[_0x304033(0x17b)][_0x304033(0x161)][_0x304033(0x1a3)][_0x304033(0x176)],_0x119aa7=await _0x260c83['downloadAndSaveMediaMessage'](_0x1ea0fc[_0x304033(0x17b)][_0x304033(0x161)][_0x304033(0x1a3)]);_0x260c83[_0x304033(0x1a4)](_0x1ea0fc[_0x304033(0x16d)],{'video':{'url':_0x119aa7},'caption':_0x3ba70f});}}}else return _0x1ea0fc[_0x304033(0x189)]('```This\x20is\x20Not\x20A\x20ViewOnce\x20Message```');}),cmd({'pattern':_0x4d47c0(0x186),'alias':[_0x4d47c0(0x185),_0x4d47c0(0x167),'cs'],'desc':_0x4d47c0(0x1ba),'category':_0x4d47c0(0x160),'filename':__filename,'use':_0x4d47c0(0x15c)},async(_0x32b251,_0x1cc61f,_0x2cef19)=>{const _0x51a6f2=_0x4d47c0;if(!_0x2cef19)return _0x1cc61f[_0x51a6f2(0x189)]('```Uhh\x20Please,\x20Give\x20Me\x20text```');let _0x823f51='https://raganork-api.onrender.com/api/attp?text='+_0x2cef19+_0x51a6f2(0x1b2),_0x5b5fe2=await getBuffer(_0x823f51),_0x1b3881=new Sticker(_0x5b5fe2,{'pack':Config[_0x51a6f2(0x144)],'author':Config[_0x51a6f2(0x147)],'type':StickerTypes[_0x51a6f2(0x174)],'categories':['🤩','🎉'],'id':'12345','quality':0x64,'background':_0x51a6f2(0x145)});const _0x30cacd=await _0x1b3881['toBuffer']();return _0x32b251[_0x51a6f2(0x1a4)](_0x1cc61f[_0x51a6f2(0x16d)],{'sticker':_0x30cacd},{'quoted':_0x1cc61f});}),cmd({'pattern':'sticker','alias':['s'],'desc':'Makes\x20sticker\x20of\x20replied\x20image/video.','category':_0x4d47c0(0x160),'filename':__filename,'use':_0x4d47c0(0x15c)},async(_0x48d1ed,_0x20990f,_0x5d3f4a)=>{const _0x443d6b=_0x4d47c0;let _0x3d4d93=_0x20990f[_0x443d6b(0x188)],_0x369ef9,_0xdea891=Config[_0x443d6b(0x144)],_0x2ff7bb=Config[_0x443d6b(0x147)];if(_0x3d4d93==_0x443d6b(0x1a1)||_0x3d4d93==_0x443d6b(0x1a3))_0x369ef9=await _0x20990f[_0x443d6b(0x155)]();else{if(_0x20990f[_0x443d6b(0x17b)]){_0x3d4d93=_0x20990f[_0x443d6b(0x17b)][_0x443d6b(0x188)];if(_0x3d4d93==_0x443d6b(0x1a1)||_0x3d4d93==_0x443d6b(0x1a3)||_0x3d4d93==_0x443d6b(0x193))_0x369ef9=await _0x20990f[_0x443d6b(0x17b)][_0x443d6b(0x155)]();else return _0x20990f['reply'](_0x443d6b(0x191));}else return _0x20990f['reply'](_0x443d6b(0x191));}if(_0x3d4d93==_0x443d6b(0x1a3)){let _0xf63309={'packname':Config[_0x443d6b(0x144)],'author':Config[_0x443d6b(0x147)]};const {writeExifVid:_0x2267be}=require(_0x443d6b(0x1b5));let _0x28fb29=await _0x2267be(_0x369ef9,_0xf63309);return await _0x48d1ed[_0x443d6b(0x1a4)](_0x20990f[_0x443d6b(0x16d)],{'sticker':{'url':_0x28fb29}});}let _0x29af47=new Sticker(_0x369ef9,{'pack':_0xdea891,'author':_0x2ff7bb,'type':StickerTypes[_0x443d6b(0x174)],'categories':['🤩','🎉'],'id':_0x443d6b(0x13f),'quality':0x64,'background':'transparent'});const _0x347692=await _0x29af47[_0x443d6b(0x15a)]();return _0x48d1ed[_0x443d6b(0x1a4)](_0x20990f[_0x443d6b(0x16d)],{'sticker':_0x347692},{'quoted':_0x20990f});}),cmd({'pattern':_0x4d47c0(0x18d),'alias':['circlestic',_0x4d47c0(0x167),'cs'],'desc':'Makes\x20sticker\x20of\x20replied\x20image/video.','category':_0x4d47c0(0x160),'filename':__filename,'use':_0x4d47c0(0x15c)},async(_0x385e5b,_0x14d3d2,_0x3510e3)=>{const _0x3627d9=_0x4d47c0;if(!_0x14d3d2[_0x3627d9(0x17b)])return _0x14d3d2[_0x3627d9(0x189)](_0x3627d9(0x148));let _0x122471=_0x14d3d2['quoted'][_0x3627d9(0x188)];pack=Config[_0x3627d9(0x144)],author=Config[_0x3627d9(0x147)];if(_0x122471==_0x3627d9(0x1a1)||_0x122471==_0x3627d9(0x193)){let _0x52a8ae=await _0x14d3d2[_0x3627d9(0x17b)][_0x3627d9(0x155)](),_0x2f14f0=new Sticker(_0x52a8ae,{'pack':pack,'author':author,'type':StickerTypes[_0x3627d9(0x158)],'categories':['🤩','🎉'],'id':_0x3627d9(0x13f),'quality':0x4b});const _0x526859=await _0x2f14f0[_0x3627d9(0x15a)]();return _0x385e5b[_0x3627d9(0x1a4)](_0x14d3d2['chat'],{'sticker':_0x526859},{'quoted':_0x14d3d2});}else return _0x14d3d2[_0x3627d9(0x189)](_0x3627d9(0x154));}),cmd({'pattern':'crop','alias':['cropstic',_0x4d47c0(0x1b3),'cropsticker'],'desc':_0x4d47c0(0x1ba),'category':_0x4d47c0(0x160),'filename':__filename,'use':'<reply\x20to\x20any\x20image/video.>'},async(_0x38a8e0,_0x365e03,_0x2b6c4b)=>{const _0x177826=_0x4d47c0;if(!_0x365e03[_0x177826(0x17b)])return _0x365e03[_0x177826(0x189)](_0x177826(0x148));let _0x9976fb=_0x365e03['quoted'][_0x177826(0x188)];pack=Config[_0x177826(0x144)],author=Config[_0x177826(0x147)];if(_0x9976fb==_0x177826(0x1a1)||_0x9976fb==_0x177826(0x193)){let _0x408686=await _0x365e03[_0x177826(0x17b)][_0x177826(0x155)](),_0x4619b3=new Sticker(_0x408686,{'pack':pack,'author':author,'type':StickerTypes[_0x177826(0x192)],'categories':['🤩','🎉'],'id':_0x177826(0x13f),'quality':0x4b});const _0x44192c=await _0x4619b3[_0x177826(0x15a)]();return _0x38a8e0[_0x177826(0x1a4)](_0x365e03[_0x177826(0x16d)],{'sticker':_0x44192c},{'quoted':_0x365e03});}else return _0x365e03[_0x177826(0x189)](_0x177826(0x154));}),cmd({'pattern':_0x4d47c0(0x1b9),'alias':[_0x4d47c0(0x14d),_0x4d47c0(0x1ad)],'desc':_0x4d47c0(0x1ba),'category':_0x4d47c0(0x160),'filename':__filename,'use':_0x4d47c0(0x15c)},async(_0x4f4c69,_0x2743bf,_0x4b71eb)=>{const _0x2ebb05=_0x4d47c0;if(!_0x2743bf[_0x2ebb05(0x17b)])return _0x2743bf[_0x2ebb05(0x189)](_0x2ebb05(0x148));let _0x502229=_0x2743bf[_0x2ebb05(0x17b)][_0x2ebb05(0x188)];pack=Config[_0x2ebb05(0x144)],author=Config[_0x2ebb05(0x147)];if(_0x502229==_0x2ebb05(0x1a1)||_0x502229=='stickerMessage'){let _0x28a9a0=await _0x2743bf[_0x2ebb05(0x17b)][_0x2ebb05(0x155)](),_0x508a16=new Sticker(_0x28a9a0,{'pack':pack,'author':author,'type':StickerTypes[_0x2ebb05(0x15b)],'categories':['🤩','🎉'],'id':_0x2ebb05(0x13f),'quality':0x4b});const _0x3af6fa=await _0x508a16[_0x2ebb05(0x15a)]();return _0x4f4c69[_0x2ebb05(0x1a4)](_0x2743bf[_0x2ebb05(0x16d)],{'sticker':_0x3af6fa},{'quoted':_0x2743bf});}else return _0x2743bf[_0x2ebb05(0x189)](_0x2ebb05(0x154));}),cmd({'pattern':_0x4d47c0(0x142),'desc':_0x4d47c0(0x1b1),'category':_0x4d47c0(0x160),'filename':__filename,'use':_0x4d47c0(0x19f)},async(_0x218497,_0x5c6752,_0xa91fcd)=>{const _0x2390b9=_0x4d47c0;if(!_0xa91fcd&&!_0x5c6752['quoted'])return await _0x5c6752[_0x2390b9(0x189)]('*Reply\x20to\x20Photo\x20With\x20text\x20To\x20Create\x20Meme.*');if(_0x5c6752['quoted'][_0x2390b9(0x188)]!='imageMessage')return _0x5c6752[_0x2390b9(0x189)](_0x2390b9(0x180));let _0x407fb6=_0xa91fcd['split']('|')[0x0]||'',_0x5efe8e=_0xa91fcd['split']('|')[0x1]||_0x2390b9(0x160),_0x351e3c=_0x407fb6[_0x2390b9(0x149)](';')[0x0]||'Suhail',_0x5a24df=_0x407fb6[_0x2390b9(0x149)](';')[0x1]||'_',_0x4f9612=await _0x218497[_0x2390b9(0x179)](_0x5c6752[_0x2390b9(0x17b)]),_0x6ae13=await TelegraPh(_0x4f9612),_0x6a67e9=await getBuffer(_0x2390b9(0x13d)+_0x5a24df+'/'+_0x351e3c+_0x2390b9(0x163)+_0x6ae13);if(_0x5efe8e[_0x2390b9(0x177)]('p')||_0x5efe8e[_0x2390b9(0x177)]('P'))await _0x218497['sendMessage'](_0x5c6752[_0x2390b9(0x16d)],{'image':_0x6a67e9,'caption':Config[_0x2390b9(0x176)]});else{let _0xe7e33d=new Sticker(_0x6a67e9,{'pack':Config[_0x2390b9(0x144)],'author':Config['author'],'type':StickerTypes[_0x2390b9(0x174)],'categories':['🤩','🎉'],'id':_0x2390b9(0x13f),'quality':0x64,'background':_0x2390b9(0x145)});const _0x256fb5=await _0xe7e33d[_0x2390b9(0x15a)]();return _0x218497[_0x2390b9(0x1a4)](_0x5c6752[_0x2390b9(0x16d)],{'sticker':_0x256fb5},{'quoted':_0x5c6752});}return await fs[_0x2390b9(0x152)](_0x4f9612);}),cmd({'pattern':_0x4d47c0(0x169),'desc':_0x4d47c0(0x1bc),'alias':['q'],'category':_0x4d47c0(0x160),'use':'<reply\x20to\x20any\x20message.>','filename':__filename},async(_0x56f1b9,_0x19af61,_0x196ffa)=>{const _0x1d87e4=_0x4d47c0;if(!_0x19af61['quoted'])return _0x19af61[_0x1d87e4(0x189)](_0x1d87e4(0x14c));let _0x328937=_0x19af61[_0x1d87e4(0x17b)]['text'],_0x552152;try{_0x552152=await _0x56f1b9['profilePictureUrl'](_0x19af61[_0x1d87e4(0x17b)][_0x1d87e4(0x1b0)],_0x1d87e4(0x14b));}catch(_0x22be57){_0x552152=THUMB_IMAGE;}let _0x4317aa=[_0x1d87e4(0x165),_0x1d87e4(0x187)],_0x3963df=_0x4317aa[Math[_0x1d87e4(0x13e)](Math[_0x1d87e4(0x16f)]()*_0x4317aa[_0x1d87e4(0x1ae)])],_0x5e60e5=await sck1['findOne']({'id':_0x19af61[_0x1d87e4(0x17b)][_0x1d87e4(0x1b0)]});var _0xf154d3;_0x5e60e5[_0x1d87e4(0x199)]&&_0x5e60e5[_0x1d87e4(0x199)]!==undefined?_0xf154d3=_0x5e60e5[_0x1d87e4(0x199)]:_0xf154d3=_0x56f1b9['getName'](_0x19af61[_0x1d87e4(0x17b)][_0x1d87e4(0x1b0)]);let _0x492185={'type':_0x1d87e4(0x175),'format':_0x1d87e4(0x1ab),'backgroundColor':_0x3963df,'width':0x200,'height':0x200,'scale':0x3,'messages':[{'avatar':!![],'from':{'first_name':_0xf154d3,'language_code':'en','name':_0xf154d3,'photo':{'url':_0x552152}},'text':_0x328937,'replyMessage':{}}]},_0x1e2548=await axios['post']('https://bot.lyo.su/quote/generate',_0x492185),_0x284a63=Buffer['alloc'](_0x1e2548[_0x1d87e4(0x197)]['result'][_0x1d87e4(0x14b)]['length'],_0x1e2548[_0x1d87e4(0x197)][_0x1d87e4(0x146)][_0x1d87e4(0x14b)],_0x1d87e4(0x171));return _0x19af61[_0x1d87e4(0x1b4)](_0x284a63,{'packname':Config[_0x1d87e4(0x144)],'author':''},_0x1d87e4(0x160));}),cmd({'pattern':'fancy','desc':_0x4d47c0(0x183),'category':'converter','use':_0x4d47c0(0x1b8),'react':'✅','filename':__filename},async(_0x2fe2ba,_0x3e3c22,_0x1fc83c)=>{const _0x436318=_0x4d47c0;if(isNaN(_0x1fc83c[_0x436318(0x149)]('\x20')[0x0])||!_0x1fc83c){let _0x2407bc=tiny(_0x436318(0x196));return listall(_0x436318(0x164))[_0x436318(0x1a2)]((_0x387425,_0x5b74e4)=>{_0x2407bc+=(_0x5b74e4+=0x1)+'\x20'+_0x387425+'\x0a';}),await _0x3e3c22[_0x436318(0x189)](_0x2407bc);}let _0x2ad815=await fancytext(''+_0x1fc83c['slice'](0x2),_0x1fc83c['split']('\x20')[0x0]);_0x3e3c22[_0x436318(0x1b4)](_0x2ad815);}),cmd({'pattern':_0x4d47c0(0x14e),'desc':'Makes\x20url\x20tiny.','category':_0x4d47c0(0x1b6),'use':_0x4d47c0(0x18c),'react':'✅','filename':__filename},async(_0x2ebdbc,_0x108057,_0x328d5f)=>{const _0x502edf=_0x4d47c0;if(!_0x328d5f)return _0x108057[_0x502edf(0x189)]('Provide\x20me\x20a\x20link');try{let _0x568536=_0x328d5f[_0x502edf(0x149)]('\x20')[0x0],_0xf5d9e6=await axios['get'](_0x502edf(0x166)+_0x568536);_0x108057['send'](_0x502edf(0x150)+_0xf5d9e6[_0x502edf(0x197)]);}catch(_0x218c55){console[_0x502edf(0x18b)](_0x218c55);}}),cmd({'pattern':_0x4d47c0(0x140),'alias':['mp3','tomp3'],'desc':_0x4d47c0(0x182),'category':_0x4d47c0(0x1b6),'use':_0x4d47c0(0x1a6),'filename':__filename},async(_0x41904d,_0x103d54,_0x369301)=>{const _0x33811a=_0x4d47c0;if(!_0x103d54[_0x33811a(0x17b)])return _0x103d54[_0x33811a(0x189)](_0x33811a(0x19c));let _0x158fd2=_0x103d54[_0x33811a(0x17b)]['mtype'];if(_0x158fd2==_0x33811a(0x17a)||_0x158fd2=='videoMessage'){let _0x44697f=await _0x41904d[_0x33811a(0x179)](_0x103d54[_0x33811a(0x17b)]);const {toAudio:_0x102748}=require('../lib');let _0x19b6a6=fs['readFileSync'](_0x44697f),_0x24a8c8=await _0x102748(_0x19b6a6);_0x41904d[_0x33811a(0x1a4)](_0x103d54['chat'],{'audio':_0x24a8c8,'mimetype':_0x33811a(0x1a5)},{'quoted':_0x103d54}),fs[_0x33811a(0x194)](_0x44697f,_0x306a83=>{const _0x3e616c=_0x33811a;if(_0x306a83)return console[_0x3e616c(0x178)](_0x3e616c(0x195),_0x44697f,_0x3e616c(0x143),_0x306a83);else return console[_0x3e616c(0x18b)](_0x3e616c(0x14f),_0x44697f);});}else return _0x103d54[_0x33811a(0x1b4)](_0x33811a(0x18a));}),cmd({'pattern':_0x4d47c0(0x19b),'alias':['mp4',_0x4d47c0(0x15d),'tovid'],'desc':'changes\x20type\x20to\x20audio.','category':'converter','use':_0x4d47c0(0x1a6),'filename':__filename},async(_0x67c8d1,_0x5de5c5,_0x10d159)=>{const _0x50a9d9=_0x4d47c0,{webp2mp4File:_0x2b47f9}=require(_0x50a9d9(0x16c));if(!_0x5de5c5[_0x50a9d9(0x17b)])return _0x5de5c5['send'](_0x50a9d9(0x17f));let _0x3eb1e1=_0x5de5c5[_0x50a9d9(0x17b)]['mtype'],_0x2fbfbd=_0x5de5c5['quoted'][_0x50a9d9(0x17c)];if(_0x3eb1e1!=_0x50a9d9(0x1a3)&&!/webp/['test'](_0x2fbfbd))return await _0x5de5c5[_0x50a9d9(0x1b4)](_0x50a9d9(0x19a));let _0x5c3ef8=await _0x67c8d1[_0x50a9d9(0x179)](_0x5de5c5[_0x50a9d9(0x17b)]);try{if(/webp/[_0x50a9d9(0x170)](_0x2fbfbd)){let _0x16fea5=await _0x2b47f9(_0x5c3ef8);_0x5c3ef8=_0x16fea5['result'];}await _0x67c8d1[_0x50a9d9(0x1a4)](_0x5de5c5[_0x50a9d9(0x16d)],{'video':{'url':_0x5c3ef8},'caption':Config[_0x50a9d9(0x176)]});try{return await fs[_0x50a9d9(0x194)](_0x5c3ef8);}catch(_0x4d4e69){return console[_0x50a9d9(0x18b)](_0x50a9d9(0x1a8),_0x4d4e69);}}catch(_0x160a5f){return console[_0x50a9d9(0x18b)](_0x50a9d9(0x16a),_0x160a5f);}});
+/**
+ Copyright (C) 2022.
+ Licensed under the  GPL-3.0 License;
+ You may not use this file except in compliance with the License.
+ It is supplied in the hope that it may be useful.
+ * @project_name : Secktor-Md
+ * @author : SamPandey001 <https://github.com/SamPandey001>
+ * @description : Secktor,A Multi-functional whatsapp bot.
+ * @version 0.0.6
+ **/
+
+const axios = require('axios')
+const { sck1, tiny, fancytext, listall,cmd,ffmpeg } = require('../lib/')
+const fs = require('fs-extra');
+const { exec } = require('child_process')
+const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
+
+    //---------------------------------------------------------------------------
+    cmd({
+        pattern: "photo",
+        desc: "Makes photo of replied sticker.",
+        category: "converter",
+        use: '<reply to any gif>',
+        filename: __filename
+    },
+    async(Void, citel, text) => {
+        const getRandom = (ext) => {
+            return `${Math.floor(Math.random() * 10000)}${ext}`
+        }
+        if (!citel.quoted) return citel.reply(`_Reply to Any Sticker._`)
+        let mime = citel.quoted.mtype
+if (mime =="imageMessage" || mime =="stickerMessage")
+{
+        let media = await Void.downloadAndSaveMediaMessage(citel.quoted);
+        let name = await getRandom('.png')
+        exec(`ffmpeg -i ${media} ${name}`, (err) => {
+            let buffer = fs.readFileSync(media)
+            Void.sendMessage(citel.chat, { image: buffer }, { quoted: citel })
+          
+         fs.unlink(media, (err) => {
+         if (err) { return console.error('File Not Deleted from From TOPHOTO AT : ' , media,'\n while Error : ' , err);  }
+         else return console.log('File deleted successfully in TOPHOTO  at : ' , media);
+         });
+         
+        })
+        
+} else return citel.reply ("```Uhh Please, Reply To A Non Animated Sticker```")
+    }
+)
+//---------------------------------------------------------------------------
+
+cmd({
+         pattern: "vv",
+         alias : ['viewonce','retrive'],
+         desc: "Flips given text.",
+         category: "misc",
+         use: '<query>',
+         filename: __filename
+     },
+     async(Void, citel, text) => {
+try {
+const quot = citel.msg.contextInfo.quotedMessage.viewOnceMessageV2;
+if(quot)
+{
+if(quot.message.imageMessage) 
+{ console.log("Quot Entered") 
+   let cap =quot.message.imageMessage.caption;
+   let anu = await Void.downloadAndSaveMediaMessage(quot.message.imageMessage)
+   return Void.sendMessage(citel.chat,{image:{url : anu},caption : cap })
+}
+if(quot.message.videoMessage) 
+{
+   let cap =quot.message.videoMessage.caption;
+   let anu = await Void.downloadAndSaveMediaMessage(quot.message.videoMessage)
+   return Void.sendMessage(citel.chat,{video:{url : anu},caption : cap })
+}
+ 
+}
+//else citel.reply("```This is Not A ViewOnce Message```") 
+       
+}  
+     
+catch(e) {  console.log("error" , e ) }     
+
+       
+if(!citel.quoted) return citel.reply("```Uh Please Reply A ViewOnce Message```")           
+if(citel.quoted.mtype === "viewOnceMessage")
+{ console.log("ViewOnce Entered") 
+ if(citel.quoted.message.imageMessage )
+{ 
+  let cap =citel.quoted.message.imageMessage.caption;
+  let anu = await Void.downloadAndSaveMediaMessage(citel.quoted.message.imageMessage)
+  Void.sendMessage(citel.chat,{image:{url : anu},caption : cap })
+}
+else if(citel.quoted.message.videoMessage )
+{
+  let cap =citel.quoted.message.videoMessage.caption;
+  let anu = await Void.downloadAndSaveMediaMessage(citel.quoted.message.videoMessage)
+  Void.sendMessage(citel.chat,{video:{url : anu},caption : cap })
+}
+
+}
+else return citel.reply("```This is Not A ViewOnce Message```")
+
+})    //---------------------------------------------------------------------------
+cmd({
+            pattern: "quotely",
+            desc: "Makes Sticker of quoted text.",
+            alias: ["q"],
+            category: "converter",
+            use: '<reply to any message.>',
+            filename: __filename
+        },
+        async(Void, citel, text) => {
+            if (!citel.quoted) return citel.reply("Please quote/reply to any message");
+            let textt = citel.quoted.text;
+            let pfp;
+            try {
+                pfp = await Void.profilePictureUrl(citel.quoted.sender, "image");
+            } catch (e) {
+                pfp = THUMB_IMAGE;
+            }
+            let todlinkf = ["#FFFFFF", "#000000"];
+            let todf = todlinkf[Math.floor(Math.random() * todlinkf.length)];
+            let username = await sck1.findOne({ id: citel.quoted.sender })
+            var tname;
+            if (username.name && username.name !== undefined) {
+                tname = username.name
+            } else {
+                tname = Void.getName(citel.quoted.sender)
+            }
+            let body = {
+                type: "quote",
+                format: "png",
+                backgroundColor: todf,
+                width: 512,
+                height: 512,
+                scale: 3,
+                messages: [{
+                    avatar: true,
+                    from: {
+                        first_name: tname,
+                        language_code: "en",
+                        name: tname,
+                        photo: {
+                            url: pfp,
+                        },
+                    },
+                    text: textt,
+                    replyMessage: {},
+                }, ],
+            };
+            let res = await axios.post("https://bot.lyo.su/quote/generate", body);
+            let img = Buffer.alloc(res.data.result.image.length, res.data.result.image, "base64");
+            return citel.reply(img,{packname:'Secktor',author:'Quotely'},"sticker")
+
+        }
+    )
+    //---------------------------------------------------------------------------
+cmd({
+            pattern: "fancy",
+            desc: "Makes stylish/fancy given text",
+            category: "converter",
+            use: '56 Secktor',
+            react: "✅",
+            filename: __filename
+        },
+        async(Void, citel, text) => {
+            if (isNaN(text.split(" ")[0]) || !text) {
+                let text = tiny(
+                    "Fancy text generator\n\nExample: .fancy 23 DARK QUEEN BOT\n\n"
+                );
+                listall("DARK QUEEN MD V1").forEach((txt, num) => {
+                    text += `${(num += 1)} ${txt}\n`;
+                });
+                return await citel.reply(text);
+            }
+
+            let fancytextt = await fancytext(`${text.slice(2)}`, text.split(" ")[0])
+            citel.reply(fancytextt)
+
+        }
+    )
+    //---------------------------------------------------------------------------
+cmd({
+            pattern: "tiny",
+            desc: "Makes url tiny.",
+            category: "converter",
+            use: '<url>',
+            react: "✅",
+            filename: __filename
+        },
+        async(Void, citel, text) => {
+            if (!text) return citel.reply('Provide me a link')
+            try {
+                link = text.split(" ")[0];
+                anu = await axios.get(`https://tinyurl.com/api-create.php?url=${link}`);
+                citel.reply(`*🛡️Your Shortened URL*\n\n${anu.data}
+🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
+🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭`);
+            } catch (e) {
+                console.log(e);
+            }
+        }
+    )
+    //---------------------------------------------------------------------------
+    cmd({
+        pattern: "circle",
+        alias: ["circlestic","circlesticker","cs"],
+        desc: "Makes sticker of replied image/video.",
+        category: "sticker",
+filename: __filename,
+        use: '<reply to any image/video.>'
+    },
+    async(Void, citel, text) => {
+        if (!citel.quoted) return citel.reply(`*Reply To any Image or video Sir.*`);
+      //console.log("Quoted Data here : ",citel.quoted);
+        let mime = citel.quoted.mtype
+        pack = Config.packname
+        author = Config.author
+       if (mime =="imageMessage" || mime =="stickerMessage") {
+            let media = await citel.quoted.download();
+            //citel.reply("*Processing Your request*");
+            let sticker = new Sticker(media, {
+                pack: pack, // The pack name
+                author: author, // The author name
+                type: StickerTypes.CIRCLE ,
+                categories: ["🤩", "🎉"], // The sticker category
+                id: "12345", // The sticker id
+                quality: 75, // The quality of the output file
+            });
+            const buffer = await sticker.toBuffer();
+            return Void.sendMessage(citel.chat, {sticker: buffer}, {quoted: citel });
+        }else return citel.reply("*Uhh,Please reply to any image*");
+
+    }
+)
+//---------------------------------------------------------------------------
+cmd({
+        pattern: "crop",
+        alias: ["cropstic","csticker","cropsticker"],
+        desc: "Makes sticker of replied image/video.",
+        category: "sticker",
+filename: __filename,
+        use: '<reply to any image/video.>'
+    },
+    async(Void, citel, text) => {
+        if (!citel.quoted) return citel.reply(`*Reply To any Image or video Sir.*`);
+      //console.log("Quoted Data here : ",citel.quoted);
+        let mime = citel.quoted.mtype
+        pack = Config.packname
+        author = Config.author
+        if (mime =="imageMessage"  || mime =="stickerMessage") {
+            let media = await citel.quoted.download();
+            //citel.reply("*Processing Your request*");
+            let sticker = new Sticker(media, {
+                pack: pack, // The pack name
+                author: author, // The author name
+                type: StickerTypes.CROPPED,
+                categories: ["🤩", "🎉"], // The sticker category
+                id: "12345", // The sticker id
+                quality: 75, // The quality of the output file
+            });
+            const buffer = await sticker.toBuffer();
+            return Void.sendMessage(citel.chat, {sticker: buffer}, {quoted: citel });
+        }else return citel.reply("*Uhh,Please reply to any image*");
+
+    }
+)
+//---------------------------------------------------------------------------
+cmd({
+        pattern: "round",
+        alias: ["roundstic","roundsticker"],
+        desc: "Makes sticker of replied image/video.",
+        category: "sticker",
+filename: __filename,
+        use: '<reply to any image/video.>'
+    },
+    async(Void, citel, text) => {
+        if (!citel.quoted) return citel.reply(`*Reply To any Image or video Sir.*`);
+      //console.log("Quoted Data here : ",citel.quoted);
+        let mime = citel.quoted.mtype
+        pack = Config.packname
+        author = Config.author
+       if (mime =="imageMessage" || mime =="stickerMessage") {
+            let media = await citel.quoted.download();
+            //citel.reply("*Processing Your request*");
+            let sticker = new Sticker(media, {
+                pack: pack, // The pack name
+                author: author, // The author name
+                type: StickerTypes.ROUNDED ,
+                categories: ["🤩", "🎉"], // The sticker category
+                id: "12345", // The sticker id
+                quality: 75, // The quality of the output file
+            });
+            const buffer = await sticker.toBuffer();
+            return Void.sendMessage(citel.chat, {sticker: buffer}, {quoted: citel });
+        }else return citel.reply("*Uhh,Please reply to any image*");
+
+    }
+)
+cmd({
+    pattern: "toaudio",
+    alias:['mp3','tomp3'],
+    desc: "changes type to audio.",
+    category: "converter",
+    use: '<reply to any Video>',
+    filename: __filename
+},
+async(Void, citel, text) => {
+    if (!citel.quoted) return citel.reply(`_Reply to Any Video_`);
+    let mime = citel.quoted.mtype
+if (mime =="audioMessage" || mime =="videoMessage")
+{
+    let media = await Void.downloadAndSaveMediaMessage(citel.quoted);
+     const { toAudio } = require('../lib');
+     let buffer = fs.readFileSync(media);
+    let audio = await toAudio(buffer);
+    Void.sendMessage(citel.chat, { audio: audio, mimetype: 'audio/mpeg' }, { quoted: citel });
+ 
+
+fs.unlink(media, (err) => {
+if (err) { return console.error('File Not Deleted from From TOAUDIO AT : ' , media,'\n while Error : ' , err);  }
+else return console.log('File deleted successfully in TOAUDIO MP3 at : ' , media);
+});
+
+}
+else return citel.reply ("```Uhh Please, Reply To A video Message```")
+}
+)
