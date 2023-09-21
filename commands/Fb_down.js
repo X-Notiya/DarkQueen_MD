@@ -1,24 +1,20 @@
-const { tlang, cmd,fetchJson,getBuffer, prefix, Config } = require('../lib')
-const fbInfoVideo = require('fb-info-video'); 
-const cheerio = require('cheerio')
-const axios= require('axios');
-
-//-----------------------------------------------------------------
+const { tlang,cmd,fethJson,getBuffer,prefix,Config } = require('../lib')
+const { fb1,fb2} = require('darkqueen-fbdl')
+//---------------------------------------------------------------------------
 cmd({
-            pattern: "facebook",
-	    alias :  ['fb','fbdl'],
-            desc: "Downloads fb videos  .",
-            category: "downloader",
-            filename: __filename,
-            use: '<add fb url.>'
-        },
+          pattern: 'fb',
+          desc: 'Fb down',
+          category: 'downloder',
+          filename: _filename,
+          use: '<ad fb url.>'
+     },
 
-        async(Void, citel, text) => {
-if(!text) return citel.reply(`*_Please Give me Facebook Video Url_*`);
+    async(Void, citel, text) => {
+if(!text) return citle.reply(`*Give me fb url*`);
 fbInfoVideo.getInfo(text)
-  .then(info =>{
+  then(info =>{
 let vurl=info.video.url_video;
-
+  
       let data  ="*Video Name:* "+  info.video.title;
           data +="\n*Video Views:* "+  info.video.view;
           data +="\n*Video Commen:* "+  info.video.comment;
