@@ -1,4 +1,4 @@
-const { AMDI, amdiDB, Language } = require('queen_amdi_core/dist/scripts')
+const { cmd, amdiDB, Language } = require('../lib')
 let { img2url } = require('@blackamda/telegram-image-url')
 const { writeFile } = require('fs/promises');
 const { setWelcome, removeWelcome, getWelcome, setBye, removeBye, getBye } = amdiDB.greetingsDB
@@ -7,7 +7,7 @@ const Lang = Language.getString('greetings');
 const getFileName = (ext) => { return `${Math.floor(Math.random() * 10000)}${ext}` };
 
 
-AMDI({ pattern: "setwelcome", desc: Lang.setwelDesc, example: Lang.setwelEx, category: "admin", react: "➕" }, (async (amdiWA) => {
+cmd({ pattern: "setwelcome", desc: Lang.setwelDesc, example: Lang.setwelEx, category: "admin", react: "➕" }, (async (amdiWA) => {
     let { clearMedia, downloadMedia, isGroup, isReply, reply, reply_message, replied_text } = amdiWA.msgLayout;
 
     if (!isGroup) return reply(Lang.notGrp)
@@ -35,10 +35,10 @@ AMDI({ pattern: "setwelcome", desc: Lang.setwelDesc, example: Lang.setwelEx, cat
         await setWelcome(amdiWA.clientJID, note, imgURL)
         return await reply(Lang.WelcomSetted, "✅");
     }
-}));
+});
 
 
-AMDI({ pattern: "getwelcome", desc: Lang.getwelDesc, category: "admin", react: "📘" }, (async (amdiWA) => {
+cmd({ pattern: "getwelcome", desc: Lang.getwelDesc, category: "admin", react: "📘" }, (async (amdiWA) => {
     let { isGroup, reply, sendImage } = amdiWA.msgLayout;
 
     if (!isGroup) return;
@@ -46,10 +46,10 @@ AMDI({ pattern: "getwelcome", desc: Lang.getwelDesc, category: "admin", react: "
     if (weldata == -1 || weldata.welnote == 'blank') return reply(Lang.nowelset)
 
     return await sendImage({ url: weldata.welpicurl }, {caption: '🔗 *Image URL :* \n' + weldata.welpicurl + '\n\n📄 *Welcome note :* \n' + weldata.welnote, quoted: true, reactEmoji: "📖"});
-}));
+});
 
 
-AMDI({ pattern: "delwelcome", desc: Lang.delwelDesc, category: "admin", react: "🚮" }, (async (amdiWA) => {
+cmd({ pattern: "delwelcome", desc: Lang.delwelDesc, category: "admin", react: "🚮" }, (async (amdiWA) => {
     let { isGroup, reply, react } = amdiWA.msgLayout;
 
     if (!isGroup) return;
@@ -58,10 +58,10 @@ AMDI({ pattern: "delwelcome", desc: Lang.delwelDesc, category: "admin", react: "
 
     await removeWelcome(amdiWA.clientJID)
     return await reply(Lang.WelcomeDeleted, "✅");
-}));
+});
 
 
-AMDI({ pattern: "setbye", desc: Lang.setbyeDesc, example: Lang.setbyeEx, category: "admin", react: "➕" }, (async (amdiWA) => {
+cmd({ pattern: "setbye", desc: Lang.setbyeDesc, example: Lang.setbyeEx, category: "admin", react: "➕" }, (async (amdiWA) => {
     let { clearMedia, downloadMedia, isGroup, isReply, reply, reply_message, replied_text } = amdiWA.msgLayout;
 
     if (!isGroup) return reply(Lang.notGrp)
@@ -89,10 +89,10 @@ AMDI({ pattern: "setbye", desc: Lang.setbyeDesc, example: Lang.setbyeEx, categor
         await setBye(amdiWA.clientJID, note, imgURL)
         return await reply(Lang.ByeSetted, "✅");
     }
-}));
+});
 
 
-AMDI({ pattern: "getbye", desc: Lang.getbyeDesc, category: "admin", react: "📘" }, (async (amdiWA) => {
+cmd({ pattern: "getbye", desc: Lang.getbyeDesc, category: "admin", react: "📘" }, (async (amdiWA) => {
     let { isGroup, reply } = amdiWA.msgLayout;
 
     if (!isGroup) return
@@ -100,10 +100,10 @@ AMDI({ pattern: "getbye", desc: Lang.getbyeDesc, category: "admin", react: "📘
     if (byedata == -1 || byedata.byenote == 'blank') return reply(Lang.nobyeset)
 
     return await sendImage({ url: byedata.byepicurl }, {caption: '🔗 *Image URL :* \n' + byedata.byepicurl + '\n\n📄 *Bye note :* \n' + byedata.byenote, quoted: true, reactEmoji: "📖"});
-}));
+});
 
 
-AMDI({ pattern: "delbye", desc: Lang.delbyeDesc, category: "admin", react: "🚮" }, (async (amdiWA) => {
+cmd({ pattern: "delbye", desc: Lang.delbyeDesc, category: "admin", react: "🚮" }, (async (amdiWA) => {
     let { isGroup, reply } = amdiWA.msgLayout;
 
     if (!isGroup) return
@@ -112,4 +112,4 @@ AMDI({ pattern: "delbye", desc: Lang.delbyeDesc, category: "admin", react: "🚮
 
     await removeBye(amdiWA.clientJID)
     return await reply(Lang.ByeDeleted, "✅");
-}));
+});
