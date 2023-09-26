@@ -7,7 +7,7 @@ cmd({
         pattern: "alive",
         react: "👋",
         desc: "Sends info about alive.",
-        category: "general",
+        category: "darkqueen",
         filename: __filename,
     },
     async(Void, citel) => {
