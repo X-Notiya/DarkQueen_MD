@@ -8,8 +8,8 @@ cmd({
         },
         async(Void, citel, text, isAdmins) => {
             let alivetext = `
-┏╼═╾╼═╾╼═╾╼═╾╼═╾❋
-┃ʜᴇʟʟᴏᴡ @user 
+┏╼❲𝘿𝘼𝙍𝙆 𝙌𝙐𝙀𝙀𝙉 𝙈𝘿❳╾❋
+┃ʜᴇʟʟᴏᴡ {citel.pushName}
 ┃ɪᴀᴍ ᴅᴀʀᴋ Qᴜᴇᴇɴ ʙᴏᴛ
 ┣❑ᴏᴡɴᴇʀ: 𝙲𝙷𝙰𝙼𝙾𝙳𝙷
 ┣❑ᴏᴡɴᴇʀ ɴᴏ: 94715491788
