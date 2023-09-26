@@ -5,10 +5,9 @@ const fetch = require('node-fetch');
 //---------------------------------------------------------------------------
 cmd({
         pattern: "alive",
-        react: "👋",
         desc: "Sends info about alive.",
         category: "darkqueen",
-        filename: __filename,
+        filename: __filename
     },
     async(Void, citel) => {
         let cap = `┏╼❲𝘿𝘼𝙍𝙆 𝙌𝙐𝙀𝙀𝙉 𝙈𝘿❳╼❋
@@ -52,14 +51,14 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
         pattern: "botlist",
-        ʀᴇᴀᴄᴛ: "🧚‍♂️",
         desc: "To check bot status",
         category: "darkqueen",
-        filename: __filename,
+        filename: __filename
     },
     async(Void, citel) => {
-        let ter = `${tiny(category)}\n
-🧜‍♀️⃝►● ${fancytext(plugins,1)}\n
+        let ter = `❋${tiny(category)}❋\n
+
+❋🧜‍♀️⃝►● ${fancytext(plugins,1)}\n
 `;
         let buttonMessaged = {
             image: {
