@@ -1,4 +1,4 @@
-const { addnote, cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime, prefix, sleep} = require('../lib') 
+const { addnote, cmd, sck1, delnote, pushName, allnotes, delallnote, tlang, botpic, runtime, prefix, sleep} = require('../lib') 
 //---------------------------------------------------------------------------
 cmd({
             pattern: "alive",
@@ -9,7 +9,7 @@ cmd({
         async(Void, citel, text, isAdmins) => {
             let alivetext = `
 ┏╼❲𝘿𝘼𝙍𝙆 𝙌𝙐𝙀𝙀𝙉 𝙈𝘿❳╾❋
-┃ʜᴇʟʟᴏᴡ {citel.pushName}
+┃ʜᴇʟʟᴏᴡ ${citel.pushName}
 ┃ɪᴀᴍ ᴅᴀʀᴋ Qᴜᴇᴇɴ ʙᴏᴛ
 ┣❑ᴏᴡɴᴇʀ: 𝙲𝙷𝙰𝙼𝙾𝙳𝙷
 ┣❑ᴏᴡɴᴇʀ ɴᴏ: 94715491788
@@ -23,17 +23,18 @@ cmd({
 `;
             let aliveMessage = {
                 image: {
-                    url: await botpic(),
+                    url: 'https://telegra.ph/file/3580e4bfbc324e93918ad.jpg',
                 },
-                caption: alivetext,
+                caption: alievtext,
                 footer: tlang().footer,
                 headerType: 4,
             };
-             return Void.sendMessage(citel.chat, aliveMessage, {
+            Void.sendMessage(citel.chat, aliveMessage, {
                 quoted: citel,
-             await Void.sendMessage(citel.chat, { audio: {url: "https://github.com/X-Notiya/DarkQueen_MD/blob/main/DarkQueen/%E0%B6%85%E0%B6%A9%E0%B7%9D.mp3" }, mimetype: 'audio/mp4', ptt: true, }, { quoted: citel })
             });
-
+            
+            await Void.sendMessage(citel.chat, { audio: {url: "https://github.com/X-Notiya/DarkQueen_MD/blob/main/DarkQueen/%E0%B6%85%E0%B6%A9%E0%B7%9D.mp3" }, mimetype: 'audio/mp4', ptt: true, }, { quoted: citel })
+                return await Void.sendMessage(citel.chat, buttonMessaged);
         }
     )
 /**👋හායි.....?**/
