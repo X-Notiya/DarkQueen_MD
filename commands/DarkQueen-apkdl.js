@@ -1,4 +1,4 @@
-const { tlang, cmd,fetchJson, sleep, botpic, getBuffer, pinterest, prefix, Config } = require('../lib')
+const { tlang, cmd, fetchJson, sleep, botpic, getBuffer, pinterest, prefix, Config } = require('../lib')
 //=============================
 cmd({
             pattern: "apk",
