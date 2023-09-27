@@ -32,7 +32,7 @@ cmd({
                 quoted: citel,
             });
             
-            await Void.sendMessage(citel.chat, { audio: {url: "https://github.com/X-Notiya/DarkQueen_MD/blob/main/DarkQueen/%E0%B6%85%E0%B6%A9%E0%B7%9D.mp3" }, mimetype: 'audio/mp4', ptt: true, }, { quoted: citel })
+            await Void.sendMessage(citel.chat, { audio: {url: "https://github.com/X-Notiya/MD/blob/main/1695782789736spcxkj4e-voicemaker.in-speech.mp3" }, mimetype: 'audio/mp4', ptt: true, }, { quoted: citel })
                 return await Void.sendMessage(citel.chat, buttonMessaged);
         }
     )
