@@ -21,11 +21,9 @@ const fetch = require('node-fetch');
 ┗╼═╾╼═╾╼═╾╼═╾╼═╾❋
 `;
         let buttonMessaged = {
-            mp4: {
-                url: 'https://telegra.ph/file/f9ba2e7d35c662194e45b.mp4',
-            },
+            mp4: { url: 'https://telegra.ph/file/f9ba2e7d35c662194e45b.mp4' },
             caption: msg,
-            footer: '『ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ ʙᴏᴛ』',
+            footer: tlang().footer,
             headerType: 4,
             contextInfo: {
                 externalAdReply: {
