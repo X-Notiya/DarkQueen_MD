@@ -1,4 +1,4 @@
-const { addnote, cmd, sck1, delnote, pushName, allnotes, delallnote, tlang, botpic, runtime, prefix, sleep} = require('../lib') 
+const { addnote, cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime, prefix, sleep} = require('../lib') 
 //---------------------------------------------------------------------------
 cmd({
             pattern: "alive",
@@ -9,7 +9,6 @@ cmd({
         async(Void, citel, text, isAdmins) => {
             let alivetext = `
 ┏╼❲𝘿𝘼𝙍𝙆 𝙌𝙐𝙀𝙀𝙉 𝙈𝘿❳╾❋
-┃ʜᴇʟʟᴏᴡ ${citel.pushName}
 ┃ɪᴀᴍ ᴅᴀʀᴋ Qᴜᴇᴇɴ ʙᴏᴛ
 ┣❑ᴏᴡɴᴇʀ: 𝙲𝙷𝙰𝙼𝙾𝙳𝙷
 ┣❑ᴏᴡɴᴇʀ ɴᴏ: 94715491788
@@ -25,7 +24,7 @@ cmd({
                 image: {
                     url: 'https://telegra.ph/file/3580e4bfbc324e93918ad.jpg',
                 },
-                caption: alievtext,
+                caption: alivetext,
                 footer: tlang().footer,
                 headerType: 4,
             };
