@@ -86,7 +86,7 @@ cmd({
             headerType: 4,
             contextInfo: {
                 externalAdReply: {
-                    title: "ＤＡＲＫ ＱＵＥＥＮ ＭＤ-Ｖ1
+                    title: "ＤＡＲＫ ＱＵＥＥＮ ＭＤ-Ｖ1",
                     body: `🍁ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴛᴇᴀᴍ🍁`,
                     thumbnail: 'https://telegra.ph/file/3580e4bfbc324e93918ad.jpg',
                     mediaType: 2,
