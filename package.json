@@ -67,6 +67,7 @@
                        "translatte": "^3.0.1",
                        "util": "^0.12.4",  
                        "sirasa-news": "latest",
+                       "ios-news": "latest",
                        "secktor-pack": "latest",
                        "ytdl-secktor": "latest", 
                        "vihangayt-fbdl": "latest",
