@@ -3,13 +3,12 @@ const { tlang, botpic,cmd, prefix } = require('../lib')
 
 cmd({
         pattern: "git",
-        react: "🍁",
         desc: "Sends info about repo.",
         category: "darkqueen",
         filename: __filename,
     },
     async(Void, citel) => {
-        let DarkQueen = `𝘿𝘼𝙍𝙆 𝙌𝙐𝙀𝙀𝙉 𝙈𝘿
+        let cap = `𝘿𝘼𝙍𝙆 𝙌𝙐𝙀𝙀𝙉 𝙈𝘿
 ❑⃝●⃟➤𝙶𝙸𝚃𝙷𝚄𝙱: https://github.com/X-Notiya/DarkQueen_MD
 
 ❑⃝●⃟➤𝚂𝚄𝙿𝙿𝙾𝚁𝚃: https://chat.whatsapp.com/IDAh8TFlvXv06EmNNALSq3
@@ -21,7 +20,7 @@ cmd({
 🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴅᴀʀᴋQᴜᴇᴇɴ ᴛᴍ_*🎭`
         let buttonMessaged = {
             image: 'https://telegra.ph/file/3580e4bfbc324e93918ad.jpg',
-            caption: DarkQueen,
+            caption: cap,
             footer: tlang().footer,
             headerType: 4,
             contextInfo: {
