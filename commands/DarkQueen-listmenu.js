@@ -475,13 +475,13 @@ cmd({
 
 cmd({
 
-            pattern: "menu list",
+            pattern: "menu",
 
             desc: "(menu cmdlist).",
 
             category: "list",
 
-            react: "🎲",
+            react: "🧞‍♀️",
 
             filename: __filename,
 
