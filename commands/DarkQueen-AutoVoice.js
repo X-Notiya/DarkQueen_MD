@@ -6,7 +6,7 @@ const axios = require('axios')
 
 // Put here your url with modified words and urls
 
-const url = 'https://gist.githubusercontent.com/X-Notiya/cb99be100d09b54679b715d1763c6364/raw'
+const url = 'https://gist.githubusercontent.com/X-Notiya/cb99be100d09b54679b715d1763c6364/raw/80b194e649a91ced626964007af4003317567d96/gistfile1.txt'
 
 /**
 
