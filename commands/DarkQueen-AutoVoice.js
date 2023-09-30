@@ -1,7 +1,5 @@
 const { tlang,cmd } = require('../lib')
 
-
-const { cmd } = require('../lib')
 const axios = require('axios')
 
 // Put here your url with modified words and urls
