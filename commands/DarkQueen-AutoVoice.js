@@ -1,10 +1,12 @@
 const { tlang,cmd } = require('../lib')
 
 
+const { cmd } = require('../lib')
 const axios = require('axios')
 
+// Put here your url with modified words and urls
 
-const url = 'https://gist.github.com/prabathLK/f602911954a959c8730aeb00a588d15d/raw'
+const url = 'https://gist.githubusercontent.com/X-Notiya/cb99be100d09b54679b715d1763c6364/raw'
 
 /**
 
