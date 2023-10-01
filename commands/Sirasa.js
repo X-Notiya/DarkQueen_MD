@@ -7,7 +7,7 @@ cmd({
         alias: ["sirasanewd", "sn", "sirasa news"],
         desc: "Sends info about repo.",
         category: "general",
-        react: "✅",
+        react: "🎀",
         filename: __filename,
     },
     async(Void, citel) => {
@@ -22,7 +22,7 @@ cmd({
 🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴛᴇᴀᴍ_*🎭
 `
         let buttonMessaged = {
-            image: { url: ${image} },
+            image: {url: image},
             caption: cap,
             footer: tlang().footer,
             headerType: 4,
