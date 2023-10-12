@@ -1,18 +1,4 @@
-#𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴
-
-
-
-
-
-
-.  ***Click [FORK](https://github.com/X-Notiya/-/fork)***
-
-
-
-
-(img src: "https://telegra.ph/file/f9ba2e7d35c662194e45b.mp4")
-
-
-4.  ***Deploy on [Heroku]()***
-
-[![Deploy on heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/X-Notiya/-&template=https://github.com/X-Notiya/-.git)
+   <p align="center">  
+  <a href="https://telegra.ph/file/cf16fa556d0012fec28b7.mp4">
+    <img alt="secktor docs" height="300" src="https://telegra.ph/file/cf16fa556d0012fec28b7.mp4">
+    <h1 align="center"> DARK QUEEN MD </h1>
