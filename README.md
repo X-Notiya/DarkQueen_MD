@@ -7,5 +7,4 @@
 
 ❑ BOT DEPLOY SITE
 
-
-<a href="https://dark-queen-md-v1-deploy-site-9af0dac1a8e7.herokuapp.com" type="button" class="cta">SITE</a>
+<a href="https://dark-queen-md-v1-deploy-site-9af0dac1a8e7.herokuapp.com"><img src="https://telegra.ph/file/2410f13a9a02224c996af.jpg" align="center" width="90" /> </a>
