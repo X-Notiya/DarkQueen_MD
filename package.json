@@ -2,11 +2,11 @@
                "name": "dark-queen",
                "version": "1.0.5",
                "description": "Multi device whatsapp bot by X-Notiya.",
-               "main": "lib/client.js",
+               "main": "index.js",
                "type": "commonjs",
                "license": "GPL-3.0",
    "scripts": {
-                "start": "pm2 start lib/client.js --deep-monitoring --attach --name Dark-Queen",
+                "start": "pm2 start index.js --deep-monitoring --attach --name Dark-Queen",
                 "stop": "pm2 stop Dark-Queen"
                 },
                "author": "X-Notiya",
