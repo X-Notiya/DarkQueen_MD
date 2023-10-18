@@ -9,10 +9,10 @@ const app = express();
 const prefix = Config.HANDLERS[0];
 const mongoose = require('mongoose');
 const { writeFile } = require("fs/promises");
-const events = require('./commands')
+const events = require('../lib/commands')
 const { exec, spawn, execSync } = require("child_process");
 const PhoneNumber = require('awesome-phonenumber')
-const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./exif')
+const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
 const { default: VoidConnect, BufferJSON,generateLinkPreviewIfRequired, WA_DEFAULT_EPHEMERAL, proto, generateWAMessageContent, generateWAMessage, AnyMessageContent, prepareWAMessageMedia, areJidsSameUser, getContentType, downloadContentFromMessage, DisconnectReason, useMultiFileAuthState, fetchLatestBaileysVersion, MessageRetryMap, generateForwardMessageContent, generateWAMessageFromContent, generateMessageID, makeInMemoryStore, jidDecode } = require("@sampandey001/baileys")
 const util = require("util");
 const Levels = require("discord-xp");
@@ -32,19 +32,19 @@ let { isUrl, sleep, getBuffer, format, parseMention, getRandom, fancy, randomfan
 const { smsg } = require('../lib/myfuncn')
 const { formatp, formatDate, getTime, clockString, runtime, fetchJson, jsonformat, GIFBufferToVideoBuffer, getSizeMedia, generateMessageTag, fancytext } = require('../lib')
 const speedofbot = require("performance-now");
-global.db = JSON.parse(fs.readFileSync(__dirname + "/database.json"));
+global.db = JSON.parse(fs.readFileSync(__dirname + "/lib/database.json"));
 var CryptoJS = require("crypto-js");
 var prefixRegex = Config.prefix === "false" || Config.prefix === "null" ? "^" : new RegExp('^[' + Config.HANDLERS + ']');
 let cc = Config.sessionName.replace(/DARK-QUEEN-MD;;;/g, "");
 async function MakeSession(){
-if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
+if (!fs.existsSync(__dirname + '/lib/auth_info_baileys/creds.json')) {
     if(cc.length<30){
     const axios = require('axios');
     let { data } = await axios.get('https://paste.c-net.org/'+cc)
-    await fs.writeFileSync(__dirname + '/auth_info_baileys/creds.json', atob(data), "utf8")    
+    await fs.writeFileSync(__dirname + '/lib/auth_info_baileys/creds.json', atob(data), "utf8")    
     } else {
 	 var c = atob(cc)
-         await fs.writeFileSync(__dirname + '/auth_info_baileys/creds.json', c, "utf8")    
+         await fs.writeFileSync(__dirname + '/lib/auth_info_baileys/creds.json', c, "utf8")    
     }
 }
 }
@@ -52,7 +52,7 @@ MakeSession()
 setTimeout(() => {
     const moment = require('moment-timezone')
     async function main() {
-	if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
+	if (!fs.existsSync(__dirname + '/lib/auth_info_baileys/creds.json')) {
 	    
          }
 	try{
@@ -81,10 +81,10 @@ setTimeout(() => {
     const msgRetryCounterMap = MessageRetryMap || {}
     async function syncdb() {
         let thumbbuffer = await getBuffer(THUMB_IMAGE)
-        const ChangePic = __dirname + "/assets/SocialLogo.png"
+        const ChangePic = __dirname + "/lib/assets/SocialLogo.png"
         await writeFile(ChangePic, thumbbuffer);
-        global.log0 = fs.readFileSync(__dirname + "/assets/SocialLogo.png"); //ur logo pic
-        const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
+        global.log0 = fs.readFileSync(__dirname + "/lib/assets/SocialLogo.png"); //ur logo pic
+        const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/lib/auth_info_baileys/')
         const Void = VoidConnect({
             logger: pino({ level: 'fatal' }),
             printQRInTerminal: true,
@@ -108,7 +108,7 @@ setTimeout(() => {
         })
         store.bind(Void.ev)
 setInterval(() => {
-    store.writeToFile(__dirname+"/store.json");
+    store.writeToFile(__dirname+"/lib/store.json");
   }, 30 * 1000);
         Void.ev.on('messages.upsert', async chatUpdate => {
             const mek = chatUpdate.messages[0]
@@ -218,7 +218,7 @@ function _0x5159(){const _0x2791e6=['30rTKhCo','input','stateObject','caption','
                 }
                 setInterval(() => {
 
-                    fs.writeFileSync(__dirname + "/database.json", JSON.stringify(global.db, null, 2));
+                    fs.writeFileSync(__dirname + "/lib/database.json", JSON.stringify(global.db, null, 2));
 
                 }, 10000);
                 try {
